@@ -13,3 +13,15 @@
 .btn-primary:hover {
   background-color: rgb(51, 151, 146);
 }
+
+.btn-primary--outline {
+  background: none;
+  border: solid 1px #3AAFA9;
+  color: #3AAFA9;
+  transition: all ease-in 0.2s;
+}
+
+.btn-primary--outline:hover {
+  background: #3AAFA9;
+  color: #FEFFFF;
+}
