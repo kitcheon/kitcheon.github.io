@@ -1,0 +1,7 @@
+.hover-up {
+    transition: all 0.2s;
+}
+
+.hover-up:hover {
+    transform: translateY(-2px);
+}

@@ -1,0 +1,15 @@
+.btn {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 500px;
+}
+
+.btn-primary {
+  background-color: #3AAFA9;
+  color: #FEFFFF;
+  transition: all ease-in 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: rgb(51, 151, 146);
+}
