@@ -3580,9 +3580,20 @@
   animation-delay: 1s;
 }
 
+.animated.delay-1_5s {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+  
+
 .animated.delay-2s {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
+}
+
+.animated.delay-2_5s {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 .animated.delay-3s {
