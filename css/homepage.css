@@ -1,0 +1,71 @@
+.hero {
+  background-color: #333;
+}
+
+.hero-content {
+  padding: 0 5vw;
+}
+
+.hero-content h1 {
+  font-size: 4em;
+  line-height: 1;
+}
+
+.hero-content p {
+  color: rgba(254, 255, 255, 0.637);
+}
+
+.hero-mockup-container {
+  margin-bottom: -35vh;
+  z-index: 100;
+}
+
+.hero-mockup-container img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.philosophy {
+  background: #feffff
+}
+
+.philosophy-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 2rem;
+  display: flex;
+  align-items: center
+}
+
+.philosophy-item {
+  padding: 0px 25px;
+  height: 100%;
+  width: 25%;
+  padding-right: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.second-item {
+  padding-left: 60px;
+  width: 75%;
+  background: #f8f8f8;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.second-item p {
+  width: 35%;
+}
+
+.second-item:before {
+  content: '';
+  height: 30%;
+  top: 30%;
+  left: -2.5px;
+  width: 5px;
+  position: absolute;
+  background-color: #3AAFA9;
+}

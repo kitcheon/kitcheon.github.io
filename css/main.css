@@ -17,6 +17,10 @@ html {
     font-family: 'Circular Std Book', sans-serif;
 }
 
+body {
+    background: #FEFFFF;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -98,20 +102,57 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+h1 {
+    color: #FEFFFF;
+}
 
+.full-height {
+    height: 100vh;
+}
+.filled {
+    height: 100%;
+}
 
+.h-80 {
+    height: 80vh;
+}
 
+.h-70 {
+    height: 70vh;
+}
 
+.h-30 {
+    height: 30vh;
+}
 
+.h-20 {
+    height: 20vh;
+}
 
+.v-center {
+    display: flex;
+    align-items: center;
+}
 
+.img-responsive {
+    max-width: 100%
+}
 
+/* ==========================================================================
+   Margin Classes
+   ========================================================================== */
 
+.mb-30 {
+    margin-bottom: 30px;
+}
 
+.mt-30 {
+    margin-top: 30px;
+}
 
-
-
-
+.mt-50 {
+    margin-top: 50px;
+}
 
 /* ==========================================================================
    Helper classes

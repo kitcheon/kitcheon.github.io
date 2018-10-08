@@ -25,3 +25,13 @@
   background: #3AAFA9;
   color: #FEFFFF;
 }
+
+.btn-secondary {
+  color: #fefefe;
+  transition: all linear 0.2s; 
+  cursor: pointer
+}
+
+.btn-secondary:hover {
+  color: rgba(254, 255, 255, 0.582);
+}
