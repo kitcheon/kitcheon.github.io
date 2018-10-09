@@ -18,4 +18,4 @@ Kitcheon Inc. is a innovative company that aims to break culinary status quos an
 - Alexandre Pineau 
 - Yong Lin Wang
 
-- Dont worry about this.
+
