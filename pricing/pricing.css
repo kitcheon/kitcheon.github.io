@@ -1,0 +1,14 @@
+body { 
+	background-color : #3AAFA9;
+}
+
+.pricing-table{
+    display: table;
+.float-left {
+float:left;
+width:33.33%;
+}
+}
+.plan{
+    display: table-cell;
+}
