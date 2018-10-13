@@ -1,3 +1,11 @@
 .navbar{
-  background-color: #333;
+  border-bottom: 1px solid black;
+}
+
+.nav-brand-type{
+  color: black;
+}
+
+a.nav-link{
+  color: black;
 }
