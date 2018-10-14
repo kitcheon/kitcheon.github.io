@@ -1,14 +1,11 @@
-body { 
-	background-color : #3AAFA9;
+.navbar{
+  border-bottom: 1px solid black;
 }
 
-.pricing-table{
-    display: table;
-.float-left {
-float:left;
-width:33.33%;
+.nav-brand-type{
+  color: black;
 }
-}
-.plan{
-    display: table-cell;
+
+a.nav-link{
+  color: black;
 }
