@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="/css/button.css">
   <link rel="stylesheet" href="/css/homepage.css">
   <link rel="stylesheet" href="/css/animations.css">
-  <link rel="stylesheet" href="/blog/about.css">
+  <link rel="stylesheet" href="/blog/blog.css">
 </head>
 <body>
 <!-- Navigation -->
@@ -45,7 +45,7 @@
             <a class="nav-link" href="/pricing/index.html">Pricing</a>
           </li>
           <li class="nav-item hover-up">
-            <a class="nav-link" href="/newsletter">News Letters</a>
+            <a class="nav-link" href="/newsletter">Newsletter</a>
           </li>
           <li class="nav-item hover-up">
             <a class="nav-link" href="/features">Features</a>
@@ -123,52 +123,64 @@
 
 
 
-  <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-      }
-      </script>
+  
 
 
       <div class =  "article-links">
-
+        
             <div class = "standardArticleLink">
-              <div id = "man" class = "articleImages">
-                <a href = "Article1.html">
-                    <img src = "Food-Images/POkqrNm.jpg" style = "width: 150px;height: 150px" title="White flower" alt="Flower">
-                </a>
+              <div class="thumbnail">
+                  <a href="Article1.html">
+                      <img class="article-Thumbnail" src="Food-Images/Margaritas.jpg"  title="White flower" alt="Flower"> 
+                  </a>
+              </div>
+              <div class = "article-Summary">
+                    <h2>Margarita Recipes!</h2>
+                    <p class = "article-Content">We've been collaborating with the five seasons and world renowned drink artists in Ottawa, and we've managed
+                        to get thousands of recipes to your home. Get the treatment of a five star hotel bar from the comfort of your home
+                    </p>
               </div>
             </div>
 
-
-
-
+            
       </div>
 
 
+
+
+
+
+
+
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 
 </body>
 
