@@ -52,13 +52,6 @@ body{
 }
 
 
-.backgroundOfArticles{
-  background-size: 100% 100%;
-  margin-top: auto;
-  background-image: black;
-}
-
-
 
 /* Code below taken and modified from W3Schools, https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 .mySlides {display: none}
@@ -98,7 +91,7 @@ img {vertical-align: middle;}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Caption text */
@@ -160,32 +153,46 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
+#image-1{
+  background-image: url("Food-Images/POkqrNm.jpg");
+  background-size: cover;
+}
+.thumbnail {
+  width: 10%
+}
+.article-Thumbnail{
+  max-width: 100%;
+  border: solid;
+  border-width : 2px;
+  padding: 2px;
+  background-color: lightslategrey;
+  border-color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 
-.articleImages{
-  height: 200px;
-  width: 200px;
-  margin-left: 5px;
-  
+.article-Summary{
+  margin-left: 1%;
+  margin-top: -1%;
+  color: black;
 }
 
 
 .standardArticleLink{
-  height: 250px;
-  width: 5000px;
-
-  margin-left: 1.1%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-
-  
-  background-color: #17252A;
+  width: 98%;
+  margin: 0 auto;
+  background-color: white;
   border-style: solid;
-  border-top-width: 1px;
+  border-width : 0;
   border-bottom-width: 1px;
-  border-color: white;
-  
+  border-top-width: 1px;
+  border-color: black;
   padding: 0px;
-  margin: 0px;
   overflow: auto;
+  display: flex;
+}
+
+.article-Content{
+  margin-top: -1.5%;
 }
 
