@@ -10,7 +10,7 @@ a{
 }
 .title-banner h1{
 	text-align:center;
-	padding:200px;
+	padding-top:200px;
 }
 
 .pricing-table{
@@ -19,6 +19,7 @@ a{
 	display:flex;
 	align-items: center;
 	justify-content: space-around;
+	margin-top:100px
 }
 
 .plan {
@@ -26,3 +27,4 @@ a{
 	padding: 50px;
 	border-radius:15px;
 }
+
