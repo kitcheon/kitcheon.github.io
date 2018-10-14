@@ -1,5 +1,5 @@
 .navbar{
-  border-bottom: 1px solid black;
+
 }
 
 .nav-brand-type{
@@ -11,6 +11,18 @@ a.nav-link{
 }
 
 .banner-container{
-  height: 1vh;
-  background-color: red;
+  background-color: white;
+  text-align: center;
+
+}
+
+
+#msg{
+  color:black;
+  padding:200px 0;
+}
+
+.text-wrapper{
+  border: 1px solid black;
+  padding: 100px;
 }
