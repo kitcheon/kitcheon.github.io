@@ -9,3 +9,8 @@
 a.nav-link{
   color: black;
 }
+
+.banner-container{
+  height: 1vh;
+  background-color: red;
+}
