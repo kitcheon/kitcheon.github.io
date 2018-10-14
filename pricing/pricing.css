@@ -1,11 +1,10 @@
-.navbar{
-  border-bottom: 1px solid black;
+body {
+	background: #333;
 }
-
-.nav-brand-type{
+a{
   color: black;
 }
-
-a.nav-link{
-  color: black;
+.title-banner h1{
+	text-align:center;
+	padding:200px;
 }
