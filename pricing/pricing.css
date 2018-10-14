@@ -3,8 +3,25 @@ body {
 }
 a{
   color: black;
+ 
+}
+.table-banner{
+	width: 100%;
 }
 .title-banner h1{
 	text-align:center;
 	padding:200px;
+}
+
+.pricing-table{
+	width:60%;
+	margin: 0 auto;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.plan {
+	background:white;
+	padding: 50px;
 }
