@@ -1,11 +1,42 @@
-.navbar{
-  border-bottom: 1px solid black;
+body {
+	background: #333;
+	font-family: "Circular Std Medium", san-serif;
+}
+a{
+  color: black;
+ 
+}
+.table-banner{
+	width: 100%;
+}
+.title-banner h1{
+	text-align:center;
+	padding-top:200px;
 }
 
-.nav-brand-type{
-  color: black;
+.pricing-table{
+	width:60%;
+	margin: 0 auto;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top:100px;
 }
 
-a.nav-link{
-  color: black;
+.plan {
+	background:white;
+	padding: 60px;
+	border-radius:15px;
+	font-size: 20px;
+
 }
+
+.plan ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.plan li:before {
+	content: "✓ "
+}
+
