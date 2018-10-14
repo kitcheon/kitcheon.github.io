@@ -28,12 +28,14 @@ a{
 	padding: 60px;
 	border-radius:15px;
 	font-size: 20px;
+	background-image : linear-gradient(to bottom left,#505050, white);
 
 }
 
 .plan ul {
 	list-style: none;
 	padding-left: 0;
+	
 }
 
 .plan li:before {
