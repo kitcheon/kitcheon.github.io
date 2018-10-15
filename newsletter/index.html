@@ -88,7 +88,7 @@
     </div>
   </nav>
   <section class="title-banner">
-	<h1>This is the Newsletter page...</h1>
+	<h1>Fill out the form below to sign up for our newsletter</h1>
   </section>
   <!-- Javascript files -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
@@ -96,7 +96,28 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
+  <div class="fillOut">
+    <form >
+      <fieldset>
+        <legend>Contact info:</legend>
+        Full name:<br>
+        <input type="text" name="name">
+        <br>
+        Email:<br>
+        <input type="email" name="lastname">
+        <br>
+        What recipes I like<br>
+        <select name="types">
+          <option value="breakfest">Breakfest</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="desert">Desert</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit" id="click">
+      </fieldset>
+    </form>
+  </div>
 
 </body>
 
