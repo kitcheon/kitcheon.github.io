@@ -8,6 +8,7 @@
   background-color: #3AAFA9;
   color: #FEFFFF;
   transition: all ease-in 0.2s;
+  box-shadow: 0 15px 35px rgba(51, 151, 146,.1), 0 5px 15px rgba(51, 151, 146,.07);
 }
 
 .btn-primary:hover {
@@ -19,6 +20,7 @@
   border: solid 1px #3AAFA9;
   color: #3AAFA9;
   transition: all ease-in 0.2s;
+  box-shadow: 0 15px 35px rgba(51, 151, 146,.1), 0 5px 15px rgba(51, 151, 146,.07);
 }
 
 .btn-primary--outline:hover {
