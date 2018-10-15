@@ -1,5 +1,6 @@
 body {
 	background: #333;
+	font-family: "Circular Std Medium", san-serif;
 }
 a{
   color: black;
@@ -10,7 +11,7 @@ a{
 }
 .title-banner h1{
 	text-align:center;
-	padding:200px;
+	padding-top:200px;
 }
 
 .pricing-table{
@@ -19,10 +20,25 @@ a{
 	display:flex;
 	align-items: center;
 	justify-content: space-around;
+	margin-top:100px;
 }
 
 .plan {
 	background:white;
-	padding: 50px;
+	padding: 60px;
 	border-radius:15px;
+	font-size: 20px;
+	background-image : linear-gradient(to bottom left,#505050, white);
+
 }
+
+.plan ul {
+	list-style: none;
+	padding-left: 0;
+	
+}
+
+.plan li:before {
+	content: "✓ "
+}
+
