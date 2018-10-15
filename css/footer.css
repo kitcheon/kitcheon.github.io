@@ -1,0 +1,37 @@
+.footer {
+    height: 50vh;
+    background: #2b7a78;
+    position: relative;
+}
+
+.footer-content {
+    width: 100%;
+}
+
+.footer-list {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+.footer-list .footer-list-item a {
+    color: #feffff;
+    text-decoration: none;
+}
+
+.footer-icon {
+    width: 50px;
+}
+
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+    background: #17252a;
+    padding: 15px 0;
+}
+
+.footer-copyright p{
+    margin: 0;
+    color: #feffff;
+}

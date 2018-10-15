@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #17252a;
     font-size: 1em;
     line-height: 1.4;
     font-family: 'Circular Std Book', sans-serif;
@@ -19,6 +19,10 @@ html {
 
 body {
     background: #FEFFFF;
+}
+
+h2 {
+    font-size: 3em;
 }
 
 /*
