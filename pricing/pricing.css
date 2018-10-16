@@ -1,8 +1,6 @@
 body{
 	margin:0;
 	padding:0;
-	font-family: 'Circular Std Book', sans-serif;
-	background:
 }
 section{
 	width:  100%;
@@ -13,6 +11,12 @@ section{
 }
 .nav-container a{
 	color:#262626;
+}
+nav.navbar{
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	background-color:transparent;
 }
 .card{
 	position: relative;
