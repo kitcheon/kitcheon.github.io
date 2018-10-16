@@ -16,9 +16,11 @@ fieldset{
 	color: white;
 }
 
-#fillOut{
-	margin-left: auto;
+.fillOut{
 	margin-right: auto;
+	margin-left: auto;
+	background-color: blue;
+	padding: 20px;
 }
 
 #click{
