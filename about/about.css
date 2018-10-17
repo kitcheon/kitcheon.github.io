@@ -1,3 +1,4 @@
+
 .page-section{
   padding:100px 0 0 0;
 }
@@ -24,7 +25,6 @@
   height: 200px;
   overflow: hidden;
   border-radius: 100%;
-  display: block
 }
 .profiles-container-top{
   width: 50%;
@@ -54,7 +54,7 @@
 }
 
 .paragraph-wrapper{
-  width: 45%;
+  width: 40%;
   margin: 0 auto 25px auto;
 }
 
