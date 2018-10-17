@@ -137,14 +137,15 @@
 
 .feature-btn {
   margin-top: 0.83em;
-  text-align: center;
-  color: #3AAFA9;
-  padding: 20px;
-  background: #feffff;
-  border-radius: 5px;
   width: 35%;
   cursor: pointer;
+  text-align: center;
+  color: #3AAFA9;
+  background: #feffff;
+  border-radius: 5px;
   box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  position: relative;
+  padding: 20px;
 }
 
 .feature-btn i {
@@ -178,4 +179,75 @@
   text-decoration: none;
   border-bottom: 0.0625em solid #def2f1;
   box-shadow: 0 -0.25em 0 #def2f1 inset;
+}
+
+.card {
+  margin-top: 0.83em;
+  width: 45%;
+  cursor: pointer;
+}
+
+.card-inner {
+  margin-top: 0.83em;
+  text-align: center;
+  color: #3AAFA9;
+  height: 150px;
+  background: #feffff;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  position: relative;
+  text-align: center;
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+}
+
+.face {
+  top: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.feature-modal {
+  opacity: 0;
+  width: 76%;
+  background: #feffff;
+  padding: 50px;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  border-radius: 5px;
+  margin: 0 auto;
+  max-height: 300px;
+  min-height: 300px;
+  overflow: auto;
+  position: relative
+}
+
+.display-none {
+  display: none;
+}
+
+.feature-modal p {
+  color: #17252a;
+}
+
+.feature-modal h3 {
+  margin-top: 0;
+  color: #17252a;
+  font-size: 2em;
+}
+
+.modal-close {
+  color: #17252a;
+  position: absolute;
+  top: 25px;
+  font-size: 30px;
+  right: 50px;
+  cursor: pointer;
 }
