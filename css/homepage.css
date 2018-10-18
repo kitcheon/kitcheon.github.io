@@ -9,6 +9,15 @@
   background-attachment: fixed
 }
 
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.5;
+}
+
 .hero-content {
   padding: 0 5vw;
 }
@@ -29,7 +38,7 @@
   position: relative;
 }
 
-.hero-mockup-container img {
+.mock-up-frame {
   position: absolute;
 }
 
@@ -40,33 +49,37 @@
 }
 
 .philosophy {
-  background: #feffff
+  z-index:2
 }
 
 .philosophy-container {
   width: 100%;
   height: 100%;
-  margin: 0 2rem;
   display: flex;
   align-items: center
 }
 
 .philosophy-item {
-  padding: 0px 25px;
+  padding: 0px 50px;
   height: 100%;
   width: 25%;
   padding-right: 60px;
   position: relative;
   display: flex;
   align-items: center;
+  background: #feffff;
+}
+
+.first-item {
+  padding-left: 7vw;
 }
 
 .second-item {
   padding-left: 60px;
   width: 75%;
-  background: #def2f1;
   padding-top: 0;
   padding-bottom: 0;
+  background: #def2f1
 }
 
 .second-item p {
@@ -148,6 +161,10 @@
   padding: 20px;
 }
 
+.feature-btn:hover {
+  box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+}
+
 .feature-btn i {
   font-size: 3em
 }
@@ -179,40 +196,6 @@
   text-decoration: none;
   border-bottom: 0.0625em solid #def2f1;
   box-shadow: 0 -0.25em 0 #def2f1 inset;
-}
-
-.card {
-  margin-top: 0.83em;
-  width: 45%;
-  cursor: pointer;
-}
-
-.card-inner {
-  margin-top: 0.83em;
-  text-align: center;
-  color: #3AAFA9;
-  height: 150px;
-  background: #feffff;
-  border-radius: 5px;
-  width: 100%;
-  cursor: pointer;
-  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
-  position: relative;
-  text-align: center;
-  transition: all 0.8s;
-  transform-style: preserve-3d;
-}
-
-.face {
-  top: 20px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.back {
-  transform: rotateY(180deg);
 }
 
 .feature-modal {

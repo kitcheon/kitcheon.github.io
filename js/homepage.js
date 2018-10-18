@@ -1,33 +1,37 @@
+// Script Written By Yong Lin Wang
 
-
-$('.card').click(function(){
-    if ($(this).children('.card-inner').css('transform') !== 'none') {
-        $(this).children('.card-inner').css('transform','');
-    }else {
-        $(this).children('.card-inner').css({
-            'transform': 'rotateY(180deg)'
-        });
-    }
+$('.feature-btn').click(function () {
+  var chapter = $(this).attr('data-chapter');
+  var feature = $(this).attr('data-feature');
+  var info = {
+    title: "Not Available",
+    desc: "Not Available"
+  }
+  $('#' + chapter + 'FeatureOverview').addClass('fadeOutUp');
+  $.getJSON('/js/features.json', function (data) {
+    console.log('success');
+    info = data[feature];
+    console.log(info);
+    $('#' + chapter + 'ModalTitle').text(info.title);
+    $('#' + chapter + 'ModalContent').text(info.desc);
+    setTimeout(function () {
+      $('#' + chapter + 'FeatureOverview').hide(function () {
+        $('#' + chapter + 'FeatureModal').addClass('v-center');
+        $('#' + chapter + 'FeatureModal').removeClass('fadeOutUp');
+        $('#' + chapter + 'FeatureModal').removeClass('display-none');
+        $('#' + chapter + 'FeatureModal').addClass('fadeInUp');
+      })
+    }, 750)
+  })
 });
 
-$('.feature-btn').click(function(){
-    $('#chapter2FeatureOverview').addClass('fadeOutUp');
-    setTimeout(function() {
-        $('#chapter2FeatureOverview').hide(function(){
-            $('#chapter2FeatureModal').addClass('v-center');
-            $('#chapter2FeatureModal').removeClass('fadeOutUp');
-            $('#chapter2FeatureModal').removeClass('display-none');
-            $('#chapter2FeatureModal').addClass('fadeInUp');
-        })
-    }, 750)
-});
-
-$('#chapter2ModalClose').click(function(){
-    $('#chapter2FeatureModal').addClass('fadeOutUp');
-    setTimeout(function() {
-        $('#chapter2FeatureModal').addClass('display-none');
-        $('#chapter2FeatureOverview').show();
-        $('#chapter2FeatureOverview').removeClass('fadeOutUp');
-        $('#chapter2FeatureOverview').addClass('fadeInUp');
-    }, 750)
+$('.modal-close').click(function () {
+  var chapter = $(this).attr('data-chapter');
+  $('#' + chapter + 'FeatureModal').addClass('fadeOutUp');
+  setTimeout(function () {
+    $('#' + chapter + 'FeatureModal').addClass('display-none');
+    $('#' + chapter + 'FeatureOverview').show();
+    $('#' + chapter + 'FeatureOverview').removeClass('fadeOutUp');
+    $('#' + chapter + 'FeatureOverview').addClass('fadeInUp');
+  }, 750)
 })

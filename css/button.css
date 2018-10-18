@@ -13,6 +13,7 @@
 
 .btn-primary:hover {
   background-color: rgb(51, 151, 146);
+  box-shadow: 0 18px 35px rgba(51, 151, 146,.1), 0 8px 15px rgba(51, 151, 146,.07);
 }
 
 .btn-primary--outline {
@@ -26,6 +27,7 @@
 .btn-primary--outline:hover {
   background: #3AAFA9;
   color: #FEFFFF;
+  box-shadow: 0 18px 35px rgba(51, 151, 146,.1), 0 8px 15px rgba(51, 151, 146,.07);
 }
 
 .btn-secondary {
