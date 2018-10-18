@@ -36,9 +36,6 @@ section{
 	box-shadow: 0 10px 20px rgba(0,0,0,.4);
 	transition: .5s;
 	overflow:hidden;
-	border-width:1px;
-	border-style:solid;
-	border-image:linear-gradient(-45deg, #9a4eff, #24ff72 );
 }
 
 
