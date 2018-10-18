@@ -37,19 +37,19 @@ section{
 
 .col-sm-4:nth-child(1) .card,
 .col-sm-4:nth-child(1) .card .title .fas{
-	background: linear-gradient(-45deg, #f403d1, #64b5f6);
+	background: linear-gradient(-45deg, #24ff72, #9a4eff );
 }
 
 
 .col-sm-4:nth-child(2) .card,
 .col-sm-4:nth-child(2) .card .title .fas{
-	background: linear-gradient(-45deg, #ffec61, #f321d7);
+	background: linear-gradient(-45deg, #f403d1, #64b5f6);
 }
 
 
 .col-sm-4:nth-child(3) .card,
 .col-sm-4:nth-child(3) .card .title .fas{
-	background: linear-gradient(-45deg, #24ff72, #9a4eff);
+	background: linear-gradient(-45deg, #ffec61, #f321d7);
 }
 
 
