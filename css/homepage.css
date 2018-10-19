@@ -13,7 +13,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  width: 100%;
   z-index: 0;
   opacity: 0.5;
 }
@@ -282,7 +282,7 @@
   overflow: hidden;
   min-height: 200px;
   padding: 50px;
-  width: 25%; 
+  width: 100%
 }
 
 .review-stars {
@@ -302,5 +302,34 @@
 @media screen and ( min-width: 768px ) {
   .carousel-cell {
     min-height: 300px;
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  /* Style adjustments for viewports that meet the condition */
+  .hero-background {
+      display: none;
+  }
+  .row {
+    height: 100%;
+  }
+  .hero-content h1 {
+      font-size: 3em;
+  }
+  .mobile-hidden {
+    display: none
+  }
+  .hero {
+    height: 100vh !important;
+  }
+  .features {
+    height: 100vh !important;
+  }
+  .feature-btn-container {
+    width: 100%;
+  }
+  .carousel-cell {
+    opacity: 1;
   }
 }

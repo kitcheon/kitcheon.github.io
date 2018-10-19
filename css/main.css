@@ -19,7 +19,6 @@ html {
 
 body {
     background: #FEFFFF;
-    overflow-x: hidden
 }
 
 h3 {
@@ -262,7 +261,6 @@ h1 {
 .mobile-only {
     display: none;
 }
-
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
