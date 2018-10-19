@@ -12,6 +12,20 @@ section{
 	background:linear-gradient(to top, #3AAFA9 0%, #2b7a72 100%);
 }  
 
+.container {
+    margin-left: 280px;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;	
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 80px;
+	width:20px;
+	text-align:center;
+}
+
 
 .card{
 	position: relative;
@@ -30,26 +44,27 @@ section{
 }
 
 
-.col-sm-4 .card{
-	border-radius: 15px;
+.plan .card{
+	border-radius: 25px;
+	width: 260px;
 }
 
 
-.col-sm-4:nth-child(1) .card,
-.col-sm-4:nth-child(1) .card .title .fas{
+.plan:nth-child(1) .card,
+.plan:nth-child(1) .card .title .fas{
+	background: linear-gradient(-45deg, #24ff72, #9a4eff );
+}
+
+
+.plan:nth-child(2) .card,
+.plan:nth-child(2) .card .title .fas{
 	background: linear-gradient(-45deg, #f403d1, #64b5f6);
 }
 
 
-.col-sm-4:nth-child(2) .card,
-.col-sm-4:nth-child(2) .card .title .fas{
+.plan:nth-child(3) .card,
+.plan:nth-child(3) .card .title .fas{
 	background: linear-gradient(-45deg, #ffec61, #f321d7);
-}
-
-
-.col-sm-4:nth-child(3) .card,
-.col-sm-4:nth-child(3) .card .title .fas{
-	background: linear-gradient(-45deg, #24ff72, #9a4eff);
 }
 
 
@@ -117,7 +132,7 @@ section{
 	margin:0 0 10px;
 	padding:0;
 	list-style:none;
-	font-size: 16px;
+	font-size: 19px;
 	color: white; 
 }
 
