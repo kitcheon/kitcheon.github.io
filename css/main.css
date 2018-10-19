@@ -22,9 +22,18 @@ body {
     overflow-x: hidden
 }
 
+h3 {
+    color: #17252a;
+}
 
 h2 {
+    color: #17252a;
     font-size: 3em;
+}
+
+svg {
+    margin: 0 auto;
+    width: 50%;
 }
 
 /*
@@ -144,9 +153,9 @@ h1 {
     max-width: 100%
 }
 
-svg {
-    margin: 0 auto;
-    width: 50%;
+.text-muted {
+    font-style: italic;
+    color: #17252a77;
 }
 
 /* ==========================================================================

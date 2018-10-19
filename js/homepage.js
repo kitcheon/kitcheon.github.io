@@ -35,3 +35,9 @@ $('.modal-close').click(function () {
     $('#' + chapter + 'FeatureOverview').addClass('fadeInUp');
   }, 750)
 })
+
+$('.review-intro').waypoint({
+  handler: function (direction) {
+    $(".carousel-cell").addClass("fadeInRight")
+  }
+})
