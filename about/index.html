@@ -37,51 +37,52 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-        <div class="nav-brand-container">
-          <a class="nav-brand-type" href="/home/index.html">Kitchon</a>
-        </div>
-        <button class="mobile-only mobile-control">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="nav-menu-container">
-          <ul class="nav-menu">
-            <li class="nav-item hover-up">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item hover-up">
-              <a class="nav-link" href="/pricing/index.html">Pricing</a>
-            </li>
-            <li class="nav-item hover-up">
-              <a class="nav-link" href="/newsletter/index.html">Newsletter</a>
-            </li>
-            <li class="nav-item hover-up">
-              <a class="nav-link" href="/features/index.html">Features</a>
-            </li>
-            <li class="nav-item hover-up">
-              <a class="nav-link" href="/blog/index.html">On The Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-primary--outline" href="#">Download Now</a>
-            </li>
-          </ul>
-        </div>
+      <div class="nav-brand-container">
+        <a class="nav-brand-type animated" href="/">Kitchon</a>
+        <a class="nav-brand-icon" href="/"></a>
+      </div>
+      <button class="mobile-only mobile-control">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="nav-item hover-up">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item hover-up">
+            <a class="nav-link" href="/pricing/index.html">Pricing</a>
+          </li>
+          <li class="nav-item hover-up">
+            <a class="nav-link" href="/newsletter">Newsletter</a>
+          </li>
+          <li class="nav-item hover-up">
+            <a class="nav-link" href="/features/index.html">Features</a>
+          </li>
+          <li class="nav-item hover-up">
+            <a class="nav-link" href="/blog">On The Menu</a>
+          </li>
+          <li class="nav-item hover-up">
+            <a class="btn btn-primary--outline" href="#">Download Now</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-
-
     <div class="nav-menu-mobile mobile-only">
       <ul class="nav-menu">
         <li class="nav-item hover-up">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="/features">Features</a>
         </li>
         <li class="nav-item hover-up">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="/about">About Us</a>
         </li>
         <li class="nav-item hover-up">
-          <a class="nav-link" href="#">News Letters</a>
+          <a class="nav-link" href="/pricing">Pricing</a>
         </li>
         <li class="nav-item hover-up">
-          <a class="nav-link" href="#">On The Menu</a>
+          <a class="nav-link" href="/newsletter">News Letters</a>
+        </li>
+        <li class="nav-item hover-up">
+          <a class="nav-link" href="/blog">On The Menu</a>
         </li>
         <li class="nav-item">
           <a class="btn btn-primary--outline" href="#">Download Now</a>
@@ -91,6 +92,9 @@
   </nav>
 
   <section class="banner-section">
+    <video autoplay muted loop class="about-background mobile-hidden">
+      <source src="/videos/about-banner.mp4" type="video/mp4">
+    </video>
     <div class="title-wrapper col-md-12 v-center filled">
       <h1>About us</h1>
     </div>
@@ -153,10 +157,9 @@
   </section>
 
   <section class="gallery-section page-section">
-    <div class="container-fluid filled">
-       <div class="row middle filled">
-         <div class="col-md-12 v-center filled" >
 
+       <div class="row middle filled" style="margin:0">
+         <div class="g v-center filled" >
            <div class="gallery-image-wrapper">
              <img class="gallery-photos" src="/img/office-1.jpg" /></a>
            </div>
@@ -171,10 +174,10 @@
            </div>
          </div>
        </div>
-     </div>
+
   </section>
 
-  
+
 
 
   <!-- Javascript files -->
@@ -183,6 +186,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="/js/navigation.js"></script>
 
 </body>
 
