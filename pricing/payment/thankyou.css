@@ -1,6 +1,7 @@
 body{
 	margin:200px auto; width:600px;
-	font-size:13px
+	font-size:13px;
+	font-family: "Circular Std Medium", san-serif;
 }	
 
 .section{
