@@ -1,6 +1,0 @@
--Rounded design for forground elements. (Buttons, Icons, Pop-outs, etc)
-
--Contrasted with sharp minimalist backgrounds.
-
--Simple color scheme, shades of greener aquamarine and white.
-
