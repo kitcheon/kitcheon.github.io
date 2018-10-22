@@ -1,7 +1,7 @@
 body{
 	margin:200px auto; width:600px;
 	font-size:13px;
-	font-family: "Circular Std Medium", san-serif;
+	font-family: "Circular Std Medium", sans-serif;
 }	
 
 .section{
@@ -78,6 +78,7 @@ input{
 	border-radius:5px;
 	border-color:gray;
 }
+
 
 
 
