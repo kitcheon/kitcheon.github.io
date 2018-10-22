@@ -2,6 +2,7 @@ body{
 	margin:200px auto; width:600px;
 	font-size:13px;
 	font-family: "Circular Std Medium", sans-serif;
+	background:linear-gradient(to top, #3AAFA9 0%, #2b7a72 100%);
 }	
 
 .section{
@@ -10,10 +11,11 @@ body{
 .row{
 	
 	box-sizing:border-box;
-	border:3px;
+	border:2.5px;
 	border-color:black;
 	border-style:solid;
 	border-radius:5px;
+	background-color:#c2c5cc;
 
 }
 
