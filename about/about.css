@@ -16,6 +16,13 @@
   margin: 0 auto;
 }
 
+.about-background{
+  position: absolute;
+  top:-30vh;
+  width: 100%;
+  z-index:-100;
+}
+
 /*Profile Section */
 .profile-section{
   text-align: center;
@@ -58,9 +65,23 @@
 }
 
 /*Gallery Section */
+.gallery-section{
+  padding:0;
+}
+
+.gallery-container{
+  width:95%;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+
+}
 
 .gallery-image-wrapper{
   width:25%;
+  padding: 0 10px;
 }
 
 .gallery-photos{
@@ -68,16 +89,7 @@
 
 }
 
-.about-background{
-  position: absolute;
-  top:-30vh;
-  width: 100%;
-  z-index:-100;
-}
 
-.g{
-  width:100%;
-}
 
 .section-header{
   width: 50%;
@@ -88,6 +100,7 @@
   font-size: 2em;
   text-align: center;
   position: relative;
+  margin: 0;
 
 }
 
@@ -95,6 +108,7 @@
   text-align: center;
   color: black;
   padding-bottom: 30px;
+  margin: 0;
 }
 
 
@@ -105,9 +119,19 @@
 
 .mission-section{
   background: white;
+  height: 40vh;
 }
 
-
+.text-header{
+  margin: 0 auto;
+  width: 70%;
+}
+.divider{
+  background: #3AAFA9;
+  height: 5px;
+  width: 30%;
+  margin: 20px auto;
+}
 
 
 .recruit-section{
@@ -128,16 +152,24 @@
   width: 40%;
   height: 100%;
   padding: 0 50px;
+  text-align: right;
 
 
 }
+.partner-join-wrapper h2{
+  color:white;
+}
+
 
 .team-join-wrapper{
   background: #def2f1;
   width: 60%;
   height: 100%;
   padding: 0 50px;
+}
 
-
-
+footer{
+  background: #17252a;
+  height: 100px;
+  width: 100%
 }
