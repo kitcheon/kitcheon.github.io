@@ -2,8 +2,8 @@ body{
 	margin:200px auto; width:600px;
 	font-size:13px;
 	font-family: "Circular Std Medium", sans-serif;
-	background:linear-gradient(to top, #3AAFA9 0%, #2b7a72 100%);
-	color:#17252a;
+	background:	white;
+	color:#def2f1;
 }	
 
 .section{
@@ -69,6 +69,8 @@ input{
 	border-bottom:1px;
 	border-bottom-style:solid;
 	border-bottom-color:black;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
 }
 
 .column1 , .column2{
@@ -91,7 +93,7 @@ input{
 	padding-left:20px;
 	padding-right:20px;
 	font-size:20px;
-	border-radius:3px;
+	border-radius:50px;
 	border:0px;
 	color:#3aafa9;
 	margin-left: 26%;
