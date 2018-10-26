@@ -3,5 +3,60 @@
         "title": "Smart Recommendations",
         "desc": "With AI and deep learning enabled features. Kitchon is always learning how to serve you better. Kitchon will learn from your preferences and recommend you the relevant recipes through a feature that we call \"Daily Discovery Cook Book\". This cook book has everything you like and more. Beyond that, we will recommend you other cookbooks tailored to your taste.",
         "icon": ""
+    },
+    "curated_cook_books": {
+        "title": "Curated Cook Books",
+        "desc": "A dish is not solid without fresh ingredients, neither is a cooking app without fresh recipes. This is why Kitchon offers daily updated, curated, hand-pick recipe collections by our renowned editorial team and acclaimed chefs from around the world. Enjoy one of the thousands of cookbooks on Kitchon.",
+        "icon": ""
+    },
+    "cocktails_baking": {
+        "title": "Cocktails + Baking",
+        "desc": "We get it, you want to impress somebody. We want you to awe your friends, family, or that special person just as much as you do. It's just, sometimes a cooked dish isn't enough. That's why all our features also extend to cocktail and baked good recipes! From Margarita to Maccaron, come to discover the special something for the special someone.",
+        "icon": ""
+    },
+    "find_it": {
+        "title": "Find It Easy",
+        "desc": "Nothing is more frustrating than not being able to find the recipe you want. Whether it's because of dietary restriction or fridge content restrictions. Our intuitive, natural language based recipe search combined with computer vision powered fridge ingredient finder IngredientAssistant(TM), will help you craft the perfect night, regardless if your fridge looks like it belongs in a 5-star restaurant or a college student dorm room.",
+        "icon": ""
+    },
+    "dynamic_recipes": {
+        "title": "Dynamic Recipes",
+        "desc": "Kitchon believes that recipes should be customized for everybody. Based on your level of skill and preferences, Kitchon will dynamically alternate cooking steps in order to provide the most tailored cooking experience, no matter if you are a seasoned chef or a cooking novice.",
+        "icon": ""
+    },
+    "tutorials": {
+        "title": "Tutorials Anytime Anywhere",
+        "desc": "No one is born knowing how to cook everything. That's why kitchon is proud to present - TutorialsAnytime. During a cooking session, whenever you don't understand a cooking technique and want to see a tutorial, simply say, \"Hey Ivy, how do I ...\"",
+        "icon": ""
+    },
+    "smart_metrics": {
+        "title": "Smart Metrics",
+        "desc": "Beyond simply converting units, with machine learning and your profile. Kitchon is able to tailor a recipe ingredient metrics to your liking. Whether it's to make it spicier, saltier, or sweeter. Kitchon is committed to making all the dishes we show taste amazing. Ps. You know what makes this feature even better? You can turn it off whenever you want!",
+        "icon": ""
+    },
+    "ingredient_assistant": {
+        "title": "Introducing IngredientAssistant",
+        "desc": "Kitchon's IngredientAssistant can not only account and sort out what kind of ingredient you have, but also order it fresh for you. In collaboration with Loblaws; Kitchon presents Ingredients Alive - a new way of doing groceries. After selecting the recipes and detecting the ingredients you currently own, Kitchon will order the remaining from Loblaws prepared by dish size, that means no excess, no waste.",
+        "icon": ""
+    },
+    "points": {
+        "title": "Point System",
+        "desc": "Cooking shouldn't be a competition; it should be enjoyable for all. That's why we built a point system that awards you not on how well you cooked or how much people liked your cooking, but rather how many recipes did you attempt and what do you think of your results. It's time to fight for the ultimate bragging right - the best chef around!",
+        "icon": ""
+    },
+    "cooking_together": {
+        "title": "Cooking Together",
+        "desc": "We understand finding time to cook together is hard. So when the time does come, we want to make sure we don't screw up. That's why kitchon can connect both accounts together and adjust the recipe to suit everyone's likings. Other features will help two people share the tasks depending on the difficulty of the recipe and the skill level of each user.",
+        "icon": ""
+    },
+    "social_media": {
+        "title": "Social Media Integration",
+        "desc": "What's the fun of cooking if other people don't know about it? That's why Kitchon integrates deeply with social media platforms like Instagram and Facebook, allowing you to share your results with friends and family with the click of a button. We also ensured that all our recipes will produce great looking results! More than that, you can even stream your cooking process with our integrated support!",
+        "icon": ""
+    },
+    "events": {
+        "title": "Local Events (Premium Only)",
+        "desc": "For Chef level users, we offer occasional local invitation only cooking events that you can attend, at these events, you can learn need recipes, meet new people and generally have a great time eating great food! These events feature a wide range of guests, from world-renowned chefs to local bistro cook. We are certain you are going to have a great time!",
+        "icon": ""
     }
 }

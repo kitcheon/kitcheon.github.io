@@ -9,9 +9,8 @@ $('.feature-btn').click(function () {
   }
   $('#' + chapter + 'FeatureOverview').addClass('fadeOutUp');
   $.getJSON('/js/features.json', function (data) {
-    console.log('success');
     info = data[feature];
-    console.log(info);
+    console.log(chapter,info);
     $('#' + chapter + 'ModalTitle').text(info.title);
     $('#' + chapter + 'ModalContent').text(info.desc);
     setTimeout(function () {
