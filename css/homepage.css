@@ -176,6 +176,7 @@
 
 .mockup-container {
   margin: 0 auto;
+  width: 50%;
   z-index: 100;
   position: relative;
 }
@@ -187,7 +188,7 @@
 
 .mockup-container video {
   padding-top: 16px;
-  padding-left: 18px;
+  padding-left: 14px;
   width: 70%;
 }
 
@@ -331,5 +332,28 @@
   }
   .carousel-cell {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .hero h1 {
+    font-size: 3em
+  }
+  p {
+    font-size: 0.8em;
+  }
+  .feature-btn-container {
+    width: 100%;
+  }
+  .hero-mockup-container {
+    width: 58%;
+  }
+  .hero-mockup-container video {
+    padding-left: 12px;
+    padding-top: 12px;
+  }
+  .mockup-container video {
+    padding-left: 16px;
+    padding-top: 14px;
   }
 }
