@@ -15,16 +15,13 @@ section{
 }  
 
 .container {
-    margin-left: 280px;
-    margin-right: auto;
-    padding-left: auto;
-    padding-right: auto;	
+    margin: 0 auto;	
 }
 
 .row {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	text-align:center;
 }
 
@@ -33,10 +30,6 @@ section{
 	font-size:50px;
 	color:#2b7a78;
 }
-
-
-
-
 
 .card{
 	position: relative;
