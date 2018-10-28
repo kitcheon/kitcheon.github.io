@@ -19,6 +19,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="/css/loading.css">
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/flexboxgrid.css">
   <link rel="stylesheet" href="/css/main.css">
@@ -34,16 +35,24 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
+  <!-- Loading Body -->
+  <div class="loading v-center">
+    <div class="loading-content">
+      <img class="loading-image" src="/img/icon.png"/>
+      <p class="visuallyhidden">Welcome to Kitchon, please wait while we load...</p>
+    </div>
+  </div>
+  
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-brand-container">
         <a class="nav-brand-type animated" href="/">Kitchon</a>
         <a class="nav-brand-icon" href="/"><img src="/img/icon.png" /></a>
+        <button class="mobile-only mobile-control">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
-      <button class="mobile-only mobile-control">
-        <i class="fas fa-bars"></i>
-      </button>
       <div class="nav-menu-container">
         <ul class="nav-menu">
           <li class="nav-item hover-up">
@@ -56,9 +65,6 @@
             <a class="nav-link" href="/newsletter">Newsletter</a>
           </li>
           <li class="nav-item hover-up">
-            <a class="nav-link" href="/features/index.html">Features</a>
-          </li>
-          <li class="nav-item hover-up">
             <a class="nav-link" href="/blog">On The Menu</a>
           </li>
           <li class="nav-item hover-up">
@@ -66,28 +72,6 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="nav-menu-mobile mobile-only">
-      <ul class="nav-menu">
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/features">Features</a>
-        </li>
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/about">About Us</a>
-        </li>
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/pricing">Pricing</a>
-        </li>
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/newsletter">News Letters</a>
-        </li>
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/blog">On The Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-primary--outline" href="#">Download Now</a>
-        </li>
-      </ul>
     </div>
   </nav>
 
@@ -100,18 +84,18 @@
       <div class="row middle h-70">
         <div class="col-md-6 col-xs-12 v-center hero-content">
           <div>
-            <h1 class="animated fadeInUp">The app that makes cooking effortless</h1>
-            <p class="animated fadeInUp delay-0_5s">
+            <h1 class="animated fadeInUp delay-0_5s">The app that makes cooking effortless</h1>
+            <p class="animated fadeInUp delay-1s">
               Recipes made for you, combined with smart machine learning powered features like cookbook recommendation, ingredient assistant. Built on a social focused platform that includes gamification and social media integrations.
             </p>
             <div class="mt-50">
-              <a class="btn btn-primary animated fadeIn delay-1s" href="#">Get The App</a>
-              <a class="btn btn-secondary animated fadeIn delay-1s">Sign Up</a>
+              <a class="btn btn-primary animated fadeIn delay-1_5s" href="#">Get The App</a>
+              <a class="btn btn-secondary animated fadeIn delay-2s" href="/newsletter/">Sign Up</a>
             </div>
           </div>
         </div>
         <div class="col-md-6 v-center mobile-hidden">
-          <div class="hero-mockup-container animated fadeInUp">
+          <div class="hero-mockup-container animated fadeInUp delay-0_5s">
             <img src="/img/iphone_x.png" class="img-responsive mock-up-frame" alt="" />
             <video src="/videos/testing.mp4" class="demo-video" autoplay loop muted></video>
             <!-- <img src="/img/iphone-x-screenshot.jpg" class="demo-video mock-up-content" /> -->
@@ -125,7 +109,7 @@
     <div class="filled">
       <div class="philosophy-container">
         <div class="philosophy-item first-item">
-          <div class="animated fadeIn delay-1_5s">
+          <div class="animated fadeIn delay-2s">
             <h3>
               Our Core
             </h3>
@@ -690,7 +674,7 @@
             <a href="/blog/">On The Menu</a>
           </div>
           <div class="footer-list-item hover-up">
-            <a href="/blog/">Other</a>
+            <a href="/blog/">Download App</a>
           </div>
         </div>
       </div>
@@ -710,6 +694,7 @@
 
   </script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="/js/loading.js"></script>
   <script src="/js/vivius.js"></script>
   <script src="/js/pathformer.js"></script>
   <script src="/js/jquery.waypoints.min.js"></script>
