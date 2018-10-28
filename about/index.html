@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="/css/animations.css">
   <link rel="stylesheet" href="/about/about.css">
   <link rel="stylesheet" href="modal.css>">
+  <link rel="stylesheet" href="/css/loading.css">
 </head>
 
 <body>
@@ -35,16 +36,24 @@
 
   <!-- Add your site or application content here -->
 
+  <!-- Loading Body -->
+  <div class="loading v-center">
+    <div class="loading-content">
+      <img class="loading-image" src="/img/icon.png"/>
+      <p class="visuallyhidden">Welcome to Kitchon, please wait while we load...</p>
+    </div>
+  </div>
+
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-brand-container">
         <a class="nav-brand-type animated" href="/">Kitchon</a>
-        <a class="nav-brand-icon" href="/"></a>
+        <a class="nav-brand-icon" href="/"><img src="/img/icon.png" /></a>
+        <button class="mobile-only mobile-control">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
-      <button class="mobile-only mobile-control">
-        <i class="fas fa-bars"></i>
-      </button>
       <div class="nav-menu-container">
         <ul class="nav-menu">
           <li class="nav-item hover-up">
@@ -57,9 +66,6 @@
             <a class="nav-link" href="/newsletter">Newsletter</a>
           </li>
           <li class="nav-item hover-up">
-            <a class="nav-link" href="/features/index.html">Features</a>
-          </li>
-          <li class="nav-item hover-up">
             <a class="nav-link" href="/blog">On The Menu</a>
           </li>
           <li class="nav-item hover-up">
@@ -68,29 +74,8 @@
         </ul>
       </div>
     </div>
-    <div class="nav-menu-mobile mobile-only">
-      <ul class="nav-menu">
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/features">Features</a>
-        </li>
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/about">About Us</a>
-        </li>
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/pricing">Pricing</a>
-        </li>
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/newsletter">News Letters</a>
-        </li>
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/blog">On The Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-primary--outline" href="#">Download Now</a>
-        </li>
-      </ul>
-    </div>
   </nav>
+
 
   <section class="banner-section">
     <video autoplay muted loop class="about-background mobile-hidden">
@@ -237,6 +222,7 @@
   <script src="js/main.js"></script>
   <script src="/js/navigation.js"></script>
   <script src="modal.js"></script>
+  <script src="/js/loading.js"></script>
 
 </body>
 
