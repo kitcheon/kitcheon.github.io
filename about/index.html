@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="/css/homepage.css">
   <link rel="stylesheet" href="/css/animations.css">
   <link rel="stylesheet" href="/about/about.css">
+  <link rel="stylesheet" href="modal.css>">
 </head>
 
 <body>
@@ -146,13 +147,29 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </header>
 
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+         <!-- The Close Button -->
+         <span class="close">&times;</span>
+
+         <!-- Modal Content (The Image) -->
+         <img class="modal-content" src="img.jpg" id="img01">
+
+         <!-- Modal Caption (Image Text) -->
+         <div id="caption"></div>
+      </div>
 
        <div class="container-fluid filled">
           <div class="row middle filled">
             <div class="col-md-12 v-center filled">
               <div class="profiles-container-top">
                 <div class="profile-wrapper">
-                   <img class="profile-photos" src="/img/profile-1.jpg" /></a>
+
+                   <img id="myImg" class="profile-photos" src="/img/profile-1.jpg" />
+
+
+
                  </div>
                  <div class="profile-wrapper">
                   <img class="profile-photos" src="/img/profile-1.jpg" /></a>
@@ -219,6 +236,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="/js/navigation.js"></script>
+  <script src="modal.js"></script>
 
 </body>
 
