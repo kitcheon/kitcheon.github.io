@@ -2,10 +2,11 @@ var $nav = $('.nav-container');
 var $navContainer = $('.navbar');
 var $navLink = $('.nav-link');
 var $navBrandTxt = $('.nav-brand-type');
-var $navBrandIcon = $('.nav-brand-icon')
+var $navBrandIcon = $('.nav-brand-icon');
+var $mobile = $('.mobile-control');
 
 $(".mobile-control").click(function(){
-    var menu = $(".nav-menu-mobile");
+    var menu = $(".nav-menu-container");
     menu.fadeToggle( "fast", "linear" );
 });
 
@@ -23,6 +24,9 @@ $(document).scroll(function() {
     $nav.css({
         'padding': $(this).scrollTop()>100 ? '10px 0' : '25px 0'
     });
+    $mobile.css({
+        'color': $(this).scrollTop()>100 ? '#3AAFA9' : '#feffff'
+    })
     $navContainer.css({
         'background': $(this).scrollTop()>100 ? '#feffff' : 'none',
         'box-shadow': $(this).scrollTop()>100 ? '0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07)' : 'none'

@@ -73,14 +73,14 @@
 @media all and (max-width: 769px) {
     .nav-container {
         padding: 15px 0;
+        display: block;
+        width: 100%;
+        margin: 0;
     }
     .mobile-only {
         display: block;
     }
     .nav-menu-container {
-        display: none;
-    }
-    .nav-menu-mobile {
         display: none;
     }
     .nav-item {
@@ -94,6 +94,11 @@
     }
     .nav-menu {
         margin-top: 0;
+    }
+    .nav-brand-container {
+        display: flex;
+        padding: 0 25px;
+        justify-content: space-between;
     }
 }
 @media all and (max-width: 480px) {
