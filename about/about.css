@@ -30,8 +30,7 @@
 }
 
 .profile-wrapper{
-  width: 50%;
-  height: 50%;
+  width: 200px;
   overflow: hidden;
   border-radius: 100%;
   margin: 0 20px;
@@ -172,4 +171,20 @@ footer{
   background: #17252a;
   height: 100px;
   width: 100%
+}
+
+.partner-photos{
+  max-width: 100%;
+
+}
+
+.partner-wrapper{
+  width:200px;
+}
+
+.partner-row{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

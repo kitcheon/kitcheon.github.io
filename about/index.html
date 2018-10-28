@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="/css/homepage.css">
   <link rel="stylesheet" href="/css/animations.css">
   <link rel="stylesheet" href="/about/about.css">
+  <link rel="stylesheet" href="/css/loading.css">
 </head>
 
 <body>
@@ -34,16 +35,24 @@
 
   <!-- Add your site or application content here -->
 
+  <!-- Loading Body -->
+  <div class="loading v-center">
+    <div class="loading-content">
+      <img class="loading-image" src="/img/icon.png"/>
+      <p class="visuallyhidden">Welcome to Kitchon, please wait while we load...</p>
+    </div>
+  </div>
+
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-brand-container">
         <a class="nav-brand-type animated" href="/">Kitchon</a>
-        <a class="nav-brand-icon" href="/"></a>
+        <a class="nav-brand-icon" href="/"><img src="/img/icon.png" /></a>
+        <button class="mobile-only mobile-control">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
-      <button class="mobile-only mobile-control">
-        <i class="fas fa-bars"></i>
-      </button>
       <div class="nav-menu-container">
         <ul class="nav-menu">
           <li class="nav-item hover-up">
@@ -56,9 +65,6 @@
             <a class="nav-link" href="/newsletter">Newsletter</a>
           </li>
           <li class="nav-item hover-up">
-            <a class="nav-link" href="/features/index.html">Features</a>
-          </li>
-          <li class="nav-item hover-up">
             <a class="nav-link" href="/blog">On The Menu</a>
           </li>
           <li class="nav-item hover-up">
@@ -67,29 +73,8 @@
         </ul>
       </div>
     </div>
-    <div class="nav-menu-mobile mobile-only">
-      <ul class="nav-menu">
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/features">Features</a>
-        </li>
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/about">About Us</a>
-        </li>
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/pricing">Pricing</a>
-        </li>
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/newsletter">News Letters</a>
-        </li>
-        <li class="nav-item hover-up">
-          <a class="nav-link" href="/blog">On The Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-primary--outline" href="#">Download Now</a>
-        </li>
-      </ul>
-    </div>
   </nav>
+
 
   <section class="banner-section">
     <video autoplay muted loop class="about-background mobile-hidden">
@@ -138,7 +123,6 @@
   </section>
 
   <section class="profile-section page-section">
-
       <header class="section-header">
         <h2>Our team</h2>
         <div class="divider" style="width:25%">
@@ -146,40 +130,26 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </header>
 
-
-       <div class="container-fluid filled">
-          <div class="row middle filled">
-            <div class="col-md-12 v-center filled">
-              <div class="profiles-container-top">
-                <div class="profile-wrapper">
-                   <img class="profile-photos" src="/img/profile-1.jpg" /></a>
-                 </div>
-                 <div class="profile-wrapper">
-                  <img class="profile-photos" src="/img/profile-1.jpg" /></a>
-                </div>
-                <div class="profile-wrapper">
-                  <img class="profile-photos" src="/img/profile-1.jpg" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="profiles-container-top">
+        <div class="profile-wrapper">
+           <img class="profile-photos" src="/img/profile-1.jpg"/>
+         </div>
+         <div class="profile-wrapper">
+          <img class="profile-photos" src="/img/profile-1.jpg" /></a>
         </div>
-
-        <div class="container-fluid filled">
-          <div class="row middle filled">
-            <div class="col-md-12 v-center filled">
-              <div class="profiles-container-bottom">
-                <div class="profile-wrapper">
-                   <img class="profile-photos" src="/img/profile-1.jpg" /></a>
-                 </div>
-                 <div class="profile-wrapper">
-                  <img class="profile-photos" src="/img/profile-1.jpg" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="profile-wrapper">
+          <img class="profile-photos" src="/img/profile-1.jpg" /></a>
         </div>
+      </div>
 
+      <div class="profiles-container-bottom">
+        <div class="profile-wrapper">
+           <img class="profile-photos" src="/img/profile-1.jpg" /></a>
+         </div>
+         <div class="profile-wrapper">
+          <img class="profile-photos" src="/img/profile-1.jpg" /></a>
+        </div>
+      </div>
   </section>
 
 
@@ -190,6 +160,20 @@
       <div class="divider" style="width:32%">
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="partner-row">
+        <div class="partner-wrapper">
+          <img class="partner-photos" src="/img/partner-1.jpg">
+        </div>
+        <div class="partner-wrapper">
+          <img class="partner-photos" src="/img/partner-1.jpg">
+        </div>
+        <div class="partner-wrapper">
+          <img class="partner-photos" src="/img/partner-1.jpg">
+        </div>
+        <div class="partner-wrapper">
+          <img class="partner-photos" src="/img/partner-1.jpg">
+        </div>
+      </div>
     </header>
   </section>
 
@@ -219,6 +203,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="/js/navigation.js"></script>
+  <script src="/js/loading.js"></script>
 
 </body>
 
