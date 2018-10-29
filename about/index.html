@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="/css/animations.css">
   <link rel="stylesheet" href="/about/about.css">
   <link rel="stylesheet" href="/css/loading.css">
+  <link rel="stylesheet" href="/css/modal.css">
 </head>
 
 <body>
@@ -68,7 +69,7 @@
             <a class="nav-link" href="/blog">On The Menu</a>
           </li>
           <li class="nav-item hover-up">
-            <a class="btn btn-primary--outline" href="#">Download Now</a>
+            <a class="btn btn-primary--outline" data-micromodal-trigger="modal-1">Download Now</a>
           </li>
         </ul>
       </div>
@@ -196,14 +197,43 @@
 
   </footer>
 
+  <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-1-title">
+            🔥Download Kitchon Now!🔥
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content" id="modal-1-content">
+          <p>
+            We are so hyped that you want to download kitchon. From us with ❤, Have fun cooking! ✌
+          </p>
+          <p class="text-centered download-arrows">👇👇👇</p>
+          <div class="badges">
+              <a href='https://play.google.com/store/apps/details?id=com.d2l.brightspace.student.android&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='/img/google-play.svg'/></a>
+              <a href='https://play.google.com/store/apps/details?id=com.d2l.brightspace.student.android&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on App store' src='/img/app-store.svg'/></a>
+          </div>
+          <p class="text-centered download-arrows">👆👆👆</p>
+          <p class="text-muted legal">Google Play and the Google Play logo are trademarks of Google LLC. App Store and the App Store logo are trademarks of Apple Inc.</p>
+        </main>
+      </div>
+    </div>
+  </div>
+
   <!-- Javascript files -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script src="js/main.js"></script>
   <script src="/js/navigation.js"></script>
   <script src="/js/loading.js"></script>
+  <script>
+    MicroModal.init();
+  </script>
 
 </body>
 
