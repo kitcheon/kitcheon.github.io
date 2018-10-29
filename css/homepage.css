@@ -309,25 +309,37 @@
 @media only screen and (max-width: 426px) {
   /* Style adjustments for viewports that meet the condition */
   .hero-background {
-      display: none;
+    display: none;
   }
   .row {
     height: 100%;
   }
   .hero-content h1 {
-      font-size: 3em;
+    font-size: 3em;
   }
   .mobile-hidden {
     display: none
+  }
+  .container-fluid {
+    padding: 0 5vw;
+  }
+  .bg-down {
+    background: linear-gradient(to bottom, #3AAFA9 0%, #2b7a72 100%);
   }
   .hero {
     height: 100vh !important;
   }
   .features {
-    height: 100vh !important;
+    min-height: 100vh !important;
+    padding: 60px 0;
+  }
+  .feature-btn {
+    width: 80%;
+    margin: 0.83em auto;
   }
   .feature-btn-container {
     width: 100%;
+    display: block;
   }
   .carousel-cell {
     opacity: 1;
@@ -354,5 +366,13 @@
   .mockup-container video {
     padding-left: 16px;
     padding-top: 14px;
+  }
+  .feature-modal p {
+    font-size: 0.8em
+  }
+  
+  .feature-modal h3 {
+    margin-top: 0;
+    font-size: 1.2em;
   }
 }

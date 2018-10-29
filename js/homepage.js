@@ -40,3 +40,10 @@ $('.review-intro').waypoint({
     $(".carousel-cell").addClass("fadeInRight")
   }
 })
+
+$(".read-more").click(function() {
+  var target = $(this).attr('data-scroll-to');
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $("#"+target).offset().top - 100
+  }, 1000);
+});

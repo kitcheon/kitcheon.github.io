@@ -30,6 +30,10 @@ h2 {
     font-size: 3em;
 }
 
+a {
+    cursor: pointer;
+}
+
 svg {
     margin: 0 auto;
     width: 50%;
