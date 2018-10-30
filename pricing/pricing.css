@@ -1,23 +1,36 @@
 body{
 	margin:0;
 	padding:0;
+	font-family: "Circular Std Medium", sans-serif;
 }
+
+
 section{
 	width:  100%;
 	height:100vh;
 	box-sizing: border-box;
 	padding: 140px 0;
 	background:linear-gradient(to top, #3AAFA9 0%, #2b7a72 100%);
+	line-height:1;
+}  
+
+.container {
+    margin: 0 auto;	
 }
-.nav-container a{
-	color:#262626;
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align:center;
 }
-nav.navbar{
-	position: fixed;
-	width: 100%;
-	z-index: 1000;
-	background-color:transparent;
+
+.payment{
+	margin-left:1040px;
+	font-size:50px;
+	color:#2b7a78;
 }
+
 .card{
 	position: relative;
 	max-width: 300px;
@@ -28,24 +41,37 @@ nav.navbar{
 	transition: .5s;
 	overflow:hidden;
 }
+
+
 .card:hover{
 	transform:scale(1.1);
 }
-.col-sm-4 .card{
-	border-radius: 15px;
+
+
+.plan .card{
+	border-radius: 25px;
+	width: 260px;
 }
-.col-sm-4:nth-child(1) .card,
-.col-sm-4:nth-child(1) .card .title .fas{
+
+
+.plan:nth-child(1) .card,
+.plan:nth-child(1) .card .title .fas{
+	background: linear-gradient(-45deg, #24ff72, #9a4eff );
+}
+
+
+.plan:nth-child(2) .card,
+.plan:nth-child(2) .card .title .fas{
 	background: linear-gradient(-45deg, #f403d1, #64b5f6);
 }
-.col-sm-4:nth-child(2) .card,
-.col-sm-4:nth-child(2) .card .title .fas{
+
+
+.plan:nth-child(3) .card,
+.plan:nth-child(3) .card .title .fas{
 	background: linear-gradient(-45deg, #ffec61, #f321d7);
 }
-.col-sm-4:nth-child(3) .card,
-.col-sm-4:nth-child(3) .card .title .fas{
-	background: linear-gradient(-45deg, #24ff72, #9a4eff);
-}
+
+
 .card:before{
 	content:"";
 	position: absolute;
@@ -55,9 +81,10 @@ nav.navbar{
 	height:40%;
 	background:rgba(255,255,255, .1);
 	z-index: 1;
-	transform: skewY(-5deg) scale(1.5);
 }
-.title .fas{
+
+
+.title .fas , .far{
 	color:#ffffff;
 	font-size:60px;
 	width: 100px;
@@ -67,6 +94,8 @@ nav.navbar{
 	line-height: 100px;
 	box-shadow:0 10px 10px rgba(0,0,0,.1)
 }
+
+
 .title h2{
 	position:relative;
 	margin: 20px 0 0;
@@ -75,31 +104,43 @@ nav.navbar{
 	font-size: 28px;
 	z-index:2;
 }
+
+
 .price{
 	position:relative;
 	z-index:2;
 }
+
+
 .price h4{
 	margin:0;
 	padding: 20px 0;
 	color: #fff;
 	font-size:60px;
 }
+
+
 .option{
 	position:relative;
 	z-index: 2;
 }
+
+
 .option ul{
 	margin:0;
 	padding:0;
 }
+
+
 .option ul li{
 	margin:0 0 10px;
 	padding:0;
 	list-style:none;
-	font-size: 16px;
+	font-size: 19px;
 	color: white; 
 }
+
+
 .card a{
 	position:relative;
 	z-index:2;
@@ -116,7 +157,347 @@ nav.navbar{
 	cursor: pointer;
 	box-shadow: 0 10px 15px rgba(0,0,0, .2);
 }
+
+
 .card a{
 	text-decoration:none
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,11 @@
+.navbar{
+  border-bottom: 1px solid black;
+}
+
+.nav-brand-type{
+  color: black;
+}
+
+a.nav-link{
+  color: black;
+}

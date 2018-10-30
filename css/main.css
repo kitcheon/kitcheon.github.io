@@ -21,8 +21,22 @@ body {
     background: #FEFFFF;
 }
 
+h3 {
+    color: #17252a;
+}
+
 h2 {
+    color: #17252a;
     font-size: 3em;
+}
+
+a {
+    cursor: pointer;
+}
+
+svg {
+    margin: 0 auto;
+    width: 50%;
 }
 
 /*
@@ -142,10 +156,19 @@ h1 {
     max-width: 100%
 }
 
-svg {
-    margin: 0 auto;
+.text-muted {
+    font-style: italic;
+    color: #17252a77;
 }
 
+.text-centered {
+    text-align: center
+}
+
+.legal {
+    margin-top: 50px;
+    font-size: 12px;
+}
 /* ==========================================================================
    Margin Classes
    ========================================================================== */
@@ -250,7 +273,6 @@ svg {
 .mobile-only {
     display: none;
 }
-
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
