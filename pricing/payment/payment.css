@@ -1,10 +1,17 @@
 body{
-	margin:200px auto; width:600px;
+	
 	font-size:13px;
 	font-family: "Circular Std Medium", sans-serif;
 	background:	white;
 	color:#def2f1;
 }	
+
+section{
+	margin:120px auto;
+	width:600px;
+	height:450px;
+	
+}
 
 .section{
 }
