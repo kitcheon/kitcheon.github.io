@@ -12,7 +12,8 @@ body{
 	justify-content: space-between;
 	width:50%;
 	margin:0 auto;
-	color:#def2f1;
+	color:#17252a;
+	margin-top: -80px;
 }
 
 .steps h1{
@@ -26,10 +27,13 @@ body{
 	border-radius:50%;
 	text-align: center;
 	line-height: 100px;
-	color:#def2f1;
+	color:#17252a;
+	margin:
 }
 
-
+.step-1 h1 ,.step-1 p1{
+	color:#def2f1;
+}
 
 .title-banner{
 	width:  100%;
