@@ -27,6 +27,7 @@
 .profile-section{
   text-align: center;
   background: white;
+
 }
 
 .profile-wrapper{
@@ -179,12 +180,14 @@ footer{
 }
 
 .partner-wrapper{
-  width:200px;
+  width:300px;
+  margin: 0 20px;
 }
 
 .partner-row{
-  width:100%;
+  width:62%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 30px auto;
 }
