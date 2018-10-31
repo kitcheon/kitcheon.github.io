@@ -30,9 +30,18 @@ body{
 	color:#17252a;
 	margin:
 }
+.a{
+	display: inline-block;
+}
 
 .step-1 h1 ,.step-1 p1{
 	color:#def2f1;
+}
+
+.square{
+	height:50px;
+	width:50px;
+	background-color: #555;
 }
 
 .title-banner{
@@ -166,6 +175,7 @@ body{
 	margin:0;
 	padding:0;
 }
+
 
 
 .option ul li{
