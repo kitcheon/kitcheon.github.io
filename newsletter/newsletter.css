@@ -1,10 +1,9 @@
 body {
-	background-color:  #333;
+	background-color: #2b7a78;
 	font-family: "Circular Std Medium", san-serif;
 }
 a{
   color: black;
-  
 }
 
 .title-banner h1{
@@ -13,18 +12,31 @@ a{
 }
 
 fieldset{
-	color: white;
+	color: black;
 }
 
-.fillOut{
-	margin-right: auto;
-	margin-left: auto;
-	background-color: blue;
+.fillOut1{
+	background-color: white;
 	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#f1{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
 }
 
 #click{
 	color: white;
 	border: 1px solid white;
-	background-color: black;
+	background-color: #2b7a78;
+	padding: 30px;
+	width: 100%;
+	margin: 5px;
+}
+
+table{
+	border-spacing: 30px 0px;
 }
