@@ -94,7 +94,7 @@
       </div>
 
     </div>
-  	<div class="container-fluid" >
+  	<div class="container-fluid" id="1" >
   		<div class="container">
   			<div class="row" >
   				<div class="plan">
@@ -134,7 +134,7 @@
   								<li><i class="fas fa-times" aria-hidden="true"></i><span> </span>Access to events</li>
   							</ul>
   						</div>
-  						<a href="/pricing/payment">Order Now</a>
+  						<a onclick="myFunction()">Order Now</a>
   					</div>
   				</div>
   				<div class="plan">
@@ -244,6 +244,14 @@
   <script src="js/main.js"></script>
   <script>
     MicroModal.init();
+    function myFunction() {
+    var x = document.getElementById("1");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
   </script>
 
 </body>
