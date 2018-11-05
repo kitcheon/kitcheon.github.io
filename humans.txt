@@ -1,17 +1,19 @@
 # humanstxt.org/
-# The humans responsible & technology colophon
-# hello world
-# hello world
+# The humans responsible for this website
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Braden, Collingwood -- About Us Page -- https://github.com/BradenC82
+    Ahmad, El Masri -- Blog (On the Menu) Page -- https://github.com/1AhmadElmasri
+    Taha, El Mouatadir -- Pricing Page -- https://github.com/L7AMD
+    Alexandre, Pineau -- Newsletters Page -- https://github.com/AlexandrePineau
+    Yong Lin, Wang -- Home Page -- https://github.com/callmekungfu
 
 # THANKS
 
-    <name>
+    Shannon Guo - Graphic Design, voice of TAYBA.
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Github.io, jQuery, Modernizr, Normalize.css, 
