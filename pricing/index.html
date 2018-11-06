@@ -77,18 +77,18 @@
   <section class="title-banner">
     <div class="steps">
 
-      <div class="step-1">
+      <div class="step-1" id="step1">
         <h1>1</h1>
         <p1>Choose</p1>
       </div>
 
-      <div class="step-2">
-        <h1>2</h1>
+      <div class="step-2" id="step2">
+        <h1 id="step22">2</h1>
         <p1>Pay</p1>
       </div>
 
-      <div class="step-3">
-        <h1>3</h1>
+      <div class="step-3" id="step3">
+        <h1 id="step33">3</h1>
         <p1>Enjoy</p1>
       </div>
 
@@ -133,7 +133,7 @@
     								<li><i class="fas fa-times" aria-hidden="true"></i><span> </span>Access to events</li>
     							</ul>
     						</div>
-    						<a onclick="myFunction()">Order Now</a>
+    						<a onclick="ShowStep2();changeColor()">Order Now</a>
     					</div>
     				</div>
     				<div class="plan">
@@ -153,7 +153,7 @@
     								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>Access to events</li>
     							</ul>
     						</div>
-    						<a onclick="myFunction()">Order Now</a>
+    						<a onclick="ShowStep2(),changeColor">Order Now</a>
     					</div>
     				</div>
     			</div>
@@ -205,7 +205,7 @@
       					<div class="box3">
       						<input type="text" name="COUPON CODE" placeholder=""></input>
       					</div>
-      					<button class="btn btn-primary" type="submit" onclick="myFunction2()">Start Subscription</button>
+      					<button class="btn btn-primary" type="submit" onclick="ShowStep3();changeColor2()">Start Subscription</button>
             </form>
     				</div>
     			</div>
@@ -291,7 +291,7 @@
   <script src="/js/payment.js" charset="utf-8"></script>
   <script>
     MicroModal.init();
-    function myFunction() {
+    function ShowStep2() {
             if (document.getElementById('Div1')) {
 
                 if (document.getElementById('Div1').style.display == 'none') {
@@ -304,7 +304,8 @@
                 }
             }
     }
-    function myFunction2() {
+    function ShowStep3() {
+
             if (document.getElementById('Div2')) {
 
                 if (document.getElementById('Div2').style.display == 'none') {
@@ -317,6 +318,21 @@
                 }
             }
     }
+    function changeColor(){
+      document.getElementById('step2').style.color = "#def2f1";
+      document.getElementById('step22').style.color = "#def2f1";
+
+      // document.getElementById('step1').style.color = "#17252a"; //
+
+    }
+    function changeColor2(){
+      document.getElementById('step3').style.color = "#def2f1";
+      document.getElementById('step33').style.color = "#def2f1";
+
+      // document.getElementById('step2').style.color = "#17252a"; //
+
+    }
+
   </script>
 
 </body>
