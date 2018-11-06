@@ -17,6 +17,8 @@ body{
 	max-width: 900px;
 }
 
+
+
 .steps h1{
 	font-size: 60px;
 	color:black;
@@ -33,8 +35,18 @@ body{
 }
 
 
+h1 , p1{
+	vertical-align: middle;
+
+}
+
+p1{
+	padding-left: 20px;
+}
+
 .step-1 h1 ,.step-1 p1{
 	color:#def2f1;
+
 }
 
 .square{
