@@ -288,51 +288,9 @@
   <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script src="/js/loading.js"></script>
   <script src="/js/main.js"></script>
-  <script src="/js/payment.js" charset="utf-8"></script>
+  <script src="/pricing/pricing.js" charset="utf-8"></script>
   <script>
     MicroModal.init();
-    function ShowStep2() {
-            if (document.getElementById('Div1')) {
-
-                if (document.getElementById('Div1').style.display == 'none') {
-                    document.getElementById('Div1').style.display = 'block';
-                    document.getElementById('Div2').style.display = 'none';
-                }
-                else {
-                    document.getElementById('Div1').style.display = 'none';
-                    document.getElementById('Div2').style.display = 'block';
-                }
-            }
-    }
-    function ShowStep3() {
-
-            if (document.getElementById('Div2')) {
-
-                if (document.getElementById('Div2').style.display == 'none') {
-                    document.getElementById('Div2').style.display = 'block';
-                    document.getElementById('Div3').style.display = 'none';
-                }
-                else {
-                    document.getElementById('Div2').style.display = 'none';
-                    document.getElementById('Div3').style.display = 'block';
-                }
-            }
-    }
-    function changeColor(){
-      document.getElementById('step2').style.color = "#def2f1";
-      document.getElementById('step22').style.color = "#def2f1";
-
-      // document.getElementById('step1').style.color = "#17252a"; //
-
-    }
-    function changeColor2(){
-      document.getElementById('step3').style.color = "#def2f1";
-      document.getElementById('step33').style.color = "#def2f1";
-
-      // document.getElementById('step2').style.color = "#17252a"; //
-
-    }
-
   </script>
 
 </body>
