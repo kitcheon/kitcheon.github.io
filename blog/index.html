@@ -37,7 +37,6 @@
       <p class="visuallyhidden">Welcome to Kitchon, please wait while we load...</p>
     </div>
   </div>
-
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-brand-container">
@@ -139,7 +138,7 @@
       <div class="slide-image">
         <img src="/blog/Food-Images/Fresh-Raspberries-Blackberries-Fruits-at-the-Market-4K-Wallpaper.jpg" style="width:100%">
       </div>
-      <div class="text">Caption Two</div>
+      <div class="text" >Caption Two</div>
     </div>
 
     <div class="mySlides fade">
@@ -194,7 +193,6 @@
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active";
     }
-
   </script>
   </div>
 
@@ -309,13 +307,27 @@
   <script src="/js/navigation.js"></script>
 
   <script>
-    $('.posts').masonry({
+    window.onload = function () { 
+      $('.posts').masonry({
       // options
       itemSelector: '.blogPost',
       columnWidth: '.grid-sizer',
       percentPosition: true,
       gutter: 15,
     });
+      
+     }
+
+    function bobbuilder(){
+      $('.posts').masonry({
+      // options
+      itemSelector: '.blogPost',
+      columnWidth: '.grid-sizer',
+      percentPosition: true,
+      gutter: 15,
+    });
+    }
+   
   </script>
 </body>
 
