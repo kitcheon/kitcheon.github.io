@@ -14,6 +14,7 @@ body{
 	margin:0 auto;
 	color:#17252a;
 	margin-top: -80px;
+	max-width: 900px;
 }
 
 .steps h1{
