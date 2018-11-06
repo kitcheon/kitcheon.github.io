@@ -206,3 +206,18 @@ body{
 .card a{
 	text-decoration:none
 }
+
+.thanks{
+	color:#def2f1;
+	width:  100%;
+	height:100vh;
+	box-sizing: border-box;
+	padding: 100px 0;
+	text-align:center;
+	text:center;
+	font-size:60px;
+}
+
+#Div2,#Div3{
+	display:none;
+}

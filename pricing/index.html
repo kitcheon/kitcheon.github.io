@@ -93,7 +93,7 @@
       </div>
 
     </div>
-    	<div class="container-fluid " id="1">
+    	<div class="container-fluid " id="Div1">
     		<div class="container ">
     			<div class="row" >
     				<div class="plan">
@@ -168,7 +168,7 @@
           </div>
         </div>
       </div>
-      <div class="payment hidden" id="2">
+      <div class="payment" id="Div2">
         <div class="card-details">
     			<div class="card-details-container">
     				<div class="type">
@@ -205,13 +205,16 @@
       					<div class="box3">
       						<input type="text" name="COUPON CODE" placeholder=""></input>
       					</div>
-      					<button class="btn btn-primary" type="submit">Start Subscription</button>
+      					<button class="btn btn-primary" type="submit" onclick="myFunction2()">Start Subscription</button>
             </form>
     				</div>
     			</div>
     		</div>
       </div>
-  	</div>
+      <div class="thanks" id="Div3">
+        <p> Thank you for buying this plan </p>
+      </div>
+    </div>
 
 
   </section>
@@ -289,14 +292,31 @@
   <script>
     MicroModal.init();
     function myFunction() {
-    var x = document.getElementById("1");
+            if (document.getElementById('Div1')) {
 
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
+                if (document.getElementById('Div1').style.display == 'none') {
+                    document.getElementById('Div1').style.display = 'block';
+                    document.getElementById('Div2').style.display = 'none';
+                }
+                else {
+                    document.getElementById('Div1').style.display = 'none';
+                    document.getElementById('Div2').style.display = 'block';
+                }
+            }
     }
-}
+    function myFunction2() {
+            if (document.getElementById('Div2')) {
+
+                if (document.getElementById('Div2').style.display == 'none') {
+                    document.getElementById('Div2').style.display = 'block';
+                    document.getElementById('Div3').style.display = 'none';
+                }
+                else {
+                    document.getElementById('Div2').style.display = 'none';
+                    document.getElementById('Div3').style.display = 'block';
+                }
+            }
+    }
   </script>
 
 </body>
