@@ -7,10 +7,8 @@
   <title>Kitcheon | Recipes Made Human</title>
   <meta name="description" content="Kitcheon is a smart recipe solution. Integrating computer vision, machine learning, big data and other advanced computing technologies to simplify how people cook.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <link rel="manifest" href="/site.webmanifest">
   <link rel="apple-touch-icon" href="/icon.png">
-
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="stylesheet" href="/fonts/style.css">
@@ -27,6 +25,7 @@
   <link rel="stylesheet" href="/css/animations.css">
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/pricing/pricing.css">
+  <link rel="stylesheet" href="/pricing/payment/payment.css">
 </head>
 
 <body>
@@ -95,7 +94,7 @@
 
     </div>
   	<div class="container-fluid" id="1" >
-  		<div class="container">
+  		<div class="container hidden">
   			<div class="row" >
   				<div class="plan">
   					<div class="card text-center">
@@ -154,12 +153,12 @@
   								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>Access to events</li>
   							</ul>
   						</div>
-  						<a href="/pricing/payment">Order Now</a>
+  						<a onclick="myFunction()">Order Now</a>
   					</div>
   				</div>
   			</div>
   		</div>
-      <div class="container payment-container">
+      <div class="container payment-container hidden">
         <div class="payment">
           <i class="fab fa-cc-paypal"></i>
           <i class="fab fa-cc-mastercard"></i>
@@ -168,6 +167,49 @@
           <i class="fab fa-cc-discover"></i>
         </div>
       </div>
+      <div class="card-details ">
+  			<div class="card-details-container">
+  				<div class="type">
+  					<div class="payment-details">
+  						<label class="payment-title">Payment Details</label>
+  					</div>
+  					<div class="img">
+  						<img src="/img/payment.png" width="210" height="40" alt="payment type">
+  					</div>
+  				</div>
+          <form id="paymentDetails">
+    				<div class="row1">
+    					<div class="label1">
+    						<label>CARD NUMBER</label>
+    					</div>
+    					<div class="box1">
+    						<input type="text" name="CARD NUMBER" placeholder="VALID CARD NUMBER"></input>
+    					</div>
+    				</div>
+    				<div class="row2">
+    					<div class="column1">
+    						<label class="exp">EXPIRATION DATE</label>
+    						<input type="text" name="EXPIRATION DATE" placeholder="MM-YY"></input>
+    					</div>
+    					<div class="column2">
+    						<label class="cv">CV CODE</label>
+    						<input type="text" name="CV CODE" placeholder="CVC"></input>
+    					</div>
+    				</div>
+    				<div class="row3">
+    					<div class="label3">
+    						<label>COUPON CODE</label>
+    					</div>
+    					<div class="box3">
+    						<input type="text" name="COUPON CODE" placeholder=""></input>
+    					</div>
+    				<div class="btn">
+    					<button class="btn btn-primary" type="submit">Start Subscription</button>
+    				</div>
+          </form>
+  				</div>
+  			</div>
+  		</div>
   	</div>
 
 
@@ -238,14 +280,16 @@
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
+  <script src="/js/plugins.js"></script>
   <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script src="/js/loading.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/payment.js" charset="utf-8"></script>
   <script>
     MicroModal.init();
     function myFunction() {
     var x = document.getElementById("1");
+
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
