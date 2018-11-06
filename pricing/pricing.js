@@ -5,7 +5,28 @@ $('#paymentDetails').submit((evt) => {
 
 })
 
+$(document).ready(function () {
+    $("#number").keyup(function () {
+                    if ($(this).val().length == 4) {
+                        $(this).val($(this).val() + "-");
+                    }
+                    else if ($(this).val().length == 9) {
+                        $(this).val($(this).val() + "-");
+                    }
+                    else if ($(this).val().length == 14) {
+                        $(this).val($(this).val() + "-");
+                    }
+                });
+});
 
+$(document).ready(function () {
+    $("#date").keyup(function () {
+                    if ($(this).val().length == 2) {
+                        $(this).val($(this).val() + "-");
+                    }
+
+                });
+});
 
 function ShowStep2() {
 

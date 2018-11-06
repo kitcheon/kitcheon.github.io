@@ -188,20 +188,20 @@
             <form id="paymentDetails">
       				<div class="row1">
       					<div class="label1">
-      						<label>CARD NUMBER</label>
+      						<label>CARD NUMBER *</label>
       					</div>
       					<div class="box1">
-      						<input type="text" name="CARD NUMBER" placeholder="VALID CARD NUMBER"></input>
+      						<input type="text" id="number" name="CARD NUMBER" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19"></input>
       					</div>
       				</div>
       				<div class="row2">
       					<div class="column1">
-      						<label class="exp">EXPIRATION DATE</label>
-      						<input type="text" name="EXPIRATION DATE" placeholder="MM-YY"></input>
+      						<label class="exp">EXPIRATION DATE *</label>
+      						<input type="text" id="date" name="EXPIRATION DATE" placeholder="MM-YY" maxlength="5"></input>
       					</div>
       					<div class="column2">
-      						<label class="cv">CV CODE</label>
-      						<input type="text" name="CV CODE" placeholder="CVC"></input>
+      						<label class="cv">CV CODE *</label>
+      						<input type="text" name="CV CODE" placeholder="CVC" maxlength="3"></input>
       					</div>
       				</div>
       				<div class="row3">
@@ -209,9 +209,13 @@
       						<label>COUPON CODE</label>
       					</div>
       					<div class="box3">
-      						<input type="text" name="COUPON CODE" placeholder=""></input>
+      						<input type="text" id="firstname" name="COUPON CODE" placeholder=""></input>
       					</div>
       					<button class="btn btn-primary" type="submit" onclick="ShowStep3();changeColor2()">Start Subscription</button>
+              </div>
+              <div class="asterix">
+                <p>* Required field</p>
+              </div>
             </form>
     				</div>
     			</div>
