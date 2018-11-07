@@ -1,7 +1,7 @@
 $('#paymentDetails').submit((evt) => {
   evt.preventDefault();
   // Add code to process submitted input
-  setTimeout(ShowStep3, 1000);
+  setTimeout(ShowStep3, 2500);
 
 })
 
