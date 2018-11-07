@@ -3581,10 +3581,10 @@
 }
 
 .animated.delay-1_5s {
-    -webkit-animation-delay: 1.5s;
-    animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
-  
+
 
 .animated.delay-2s {
   -webkit-animation-delay: 2s;
@@ -3637,5 +3637,67 @@
     animation: unset !important;
     -webkit-transition: none !important;
     transition: none !important;
+  }
+}
+
+.slideUpAdv {
+  animation-name: slideUpAdv;
+}
+
+@keyframes slideUpAdv {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 0
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    opacity: 0
+  }
+
+  51% {
+    opacity: 1
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+
+  }
+}
+
+@keyframes slideUpOut {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+
+  25% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    opacity: 1
+  }
+
+  26% {
+    opacity: 0
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    opacity: 0
+  }
+
+  51% {
+    opacity: 1
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1
   }
 }
