@@ -14,7 +14,10 @@ body{
 	margin:0 auto;
 	color:#17252a;
 	margin-top: -80px;
+	max-width: 900px;
 }
+
+
 
 .steps h1{
 	font-size: 60px;
@@ -32,8 +35,18 @@ body{
 }
 
 
+h1 , p1{
+	vertical-align: middle;
+
+}
+
+p1{
+	padding-left: 20px;
+}
+
 .step-1 h1 ,.step-1 p1{
 	color:#def2f1;
+
 }
 
 .square{
@@ -68,7 +81,7 @@ body{
 	justify-content: end;
 }
 
-.payment{
+.payment-method{
 	margin-top: 15px;
 	font-size:50px;
 	color:#2b7a78;
@@ -205,4 +218,49 @@ body{
 
 .card a{
 	text-decoration:none
+}
+
+.thanks{
+	color:#def2f1;
+	width:  100%;
+	height:100vh;
+	box-sizing: border-box;
+	padding: 80px 0;
+	text-align:center;
+	text:center;
+	font-size:60px;
+}
+
+#Div0,#Div2,#Div3{
+	display: none;
+}
+
+.chargement {
+    border-top: 10px dotted #17252A;
+		border-bottom: 10px dotted #2B7A78;
+		border-right: 10px dotted #3AAFA9;
+		border-left: 10px dotted #DEF2F1;
+
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+		align-items: center;
+		text-align: center;
+		margin: 0 auto;
+		opacity: 0.7;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.between-steps{
+	align-items: center;
+	text-align: center;
+	font-size: 40px;
+	color: #def2f1;
+	margin:0 auto;
+	margin-top: 100px;
 }

@@ -7,10 +7,8 @@
   <title>Kitcheon | Recipes Made Human</title>
   <meta name="description" content="Kitcheon is a smart recipe solution. Integrating computer vision, machine learning, big data and other advanced computing technologies to simplify how people cook.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <link rel="manifest" href="/site.webmanifest">
   <link rel="apple-touch-icon" href="/icon.png">
-
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="stylesheet" href="/fonts/style.css">
@@ -27,6 +25,7 @@
   <link rel="stylesheet" href="/css/animations.css">
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/pricing/pricing.css">
+  <link rel="stylesheet" href="/pricing/payment/payment.css">
 </head>
 
 <body>
@@ -78,99 +77,166 @@
   <section class="title-banner">
     <div class="steps">
 
-      <div class="step-1">
+      <div class="step-1" id="step1">
         <h1>1</h1>
         <p1>Choose</p1>
       </div>
 
-      <div class="step-2">
-        <h1>2</h1>
+      <i class="fas fa-angle-double-right" id="step222"></i>
+
+
+      <div class="step-2" id="step2">
+        <h1 id="step22">2</h1>
         <p1>Pay</p1>
       </div>
 
-      <div class="step-3">
-        <h1>3</h1>
+      <i class="fas fa-angle-double-right" id="step333"></i>
+
+      <div class="step-3" id="step3">
+        <h1 id="step33">3</h1>
         <p1>Enjoy</p1>
       </div>
 
+
     </div>
-  	<div class="container-fluid" >
-  		<div class="container">
-  			<div class="row" >
-  				<div class="plan">
-  					<div class="card text-center">
-  						<div class="title">
-  							<i class="far fa-star"></i>
-  							<h2><b>Free</b></h2>
-  						</div>
-  						<div class="price">
-  							<h4><sup>$</sup>0</h4>
-  						</div>
-  						<div class="option">
-  							<ul>
-  								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>Access to App</li>
-  								<li><i class="fas fa-times" aria-hidden="true"></i><span> </span>No Ads</li>
-  								<li><i class="fas fa-times" aria-hidden="true"></i><span> </span>Access to all recipes</li>
-  								<li><i class="fas fa-times" aria-hidden="true"></i><span> </span>Access to events</li>
-  							</ul>
-  						</div>
-  						<a data-micromodal-trigger="modal-1">Download app</a>
-  					</div>
-  				</div>
-  				<div class="plan">
-  					<div class="card text-center">
-  						<div class="title">
-  							<i class="fas fa-star-half-alt"></i>
-  							<h2><b>AdFree</b></h2>
-  						</div>
-  						<div class="price">
-  							<h4><sup>$</sup>4</h4>
-  						</div>
-  						<div class="option">
-  							<ul>
-  								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>Access to App</li>
-  								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>No Ads</li>
-  								<li><i class="fas fa-times" aria-hidden="true"></i><span> </span>Access to all recipe</li>
-  								<li><i class="fas fa-times" aria-hidden="true"></i><span> </span>Access to events</li>
-  							</ul>
-  						</div>
-  						<a href="/pricing/payment">Order Now</a>
-  					</div>
-  				</div>
-  				<div class="plan">
-  					<div class="card text-center">
-  						<div class="title">
-  							<i class="fas fa-star"></i>
-  							<h2><b>Chef</b></h2>
-  						</div>
-  						<div class="price">
-  							<h4><sup>$</sup>9</h4>
-  						</div>
-  						<div class="option">
-  							<ul>
-  								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>Access to App</li>
-  								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>No Ads</li>
-  								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>Access to all recipe</li>
-  								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>Access to events</li>
-  							</ul>
-  						</div>
-  						<a href="/pricing/payment">Order Now</a>
-  					</div>
-  				</div>
-  			</div>
-  		</div>
-      <div class="container payment-container">
-        <div class="payment">
-          <i class="fab fa-cc-paypal"></i>
-          <i class="fab fa-cc-mastercard"></i>
-          <i class="fab fa-cc-visa"></i>
-          <i class="fab fa-cc-amex"></i>
-          <i class="fab fa-cc-discover"></i>
+    	<div class="container-fluid " id="Div1">
+    		<div class="container ">
+    			<div class="row" >
+    				<div class="plan">
+    					<div class="card text-center">
+    						<div class="title">
+    							<i class="far fa-star"></i>
+    							<h2><b>Free</b></h2>
+    						</div>
+    						<div class="price">
+    							<h4><sup>$</sup>0</h4>
+    						</div>
+    						<div class="option">
+    							<ul>
+    								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>Access to App</li>
+    								<li><i class="fas fa-times" aria-hidden="true"></i><span> </span>No Ads</li>
+    								<li><i class="fas fa-times" aria-hidden="true"></i><span> </span>Access to all recipes</li>
+    								<li><i class="fas fa-times" aria-hidden="true"></i><span> </span>Access to events</li>
+    							</ul>
+    						</div>
+    						<a data-micromodal-trigger="modal-1">Download app</a>
+    					</div>
+    				</div>
+    				<div class="plan">
+    					<div class="card text-center">
+    						<div class="title">
+    							<i class="fas fa-star-half-alt"></i>
+    							<h2><b>AdFree</b></h2>
+    						</div>
+    						<div class="price">
+    							<h4><sup>$</sup>4</h4>
+    						</div>
+    						<div class="option">
+    							<ul>
+    								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>Access to App</li>
+    								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>No Ads</li>
+    								<li><i class="fas fa-times" aria-hidden="true"></i><span> </span>Access to all recipe</li>
+    								<li><i class="fas fa-times" aria-hidden="true"></i><span> </span>Access to events</li>
+    							</ul>
+    						</div>
+    						<a onclick="ShowStep2();changeColor()">Order Now</a>
+    					</div>
+    				</div>
+    				<div class="plan">
+    					<div class="card text-center">
+    						<div class="title">
+    							<i class="fas fa-star"></i>
+    							<h2><b>Chef</b></h2>
+    						</div>
+    						<div class="price">
+    							<h4><sup>$</sup>9</h4>
+    						</div>
+    						<div class="option">
+    							<ul>
+    								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>Access to App</li>
+    								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>No Ads</li>
+    								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>Access to all recipe</li>
+    								<li><i class="fas fa-check" aria-hidden="true"></i><span> </span>Access to events</li>
+    							</ul>
+    						</div>
+    						<a onclick="ShowStep2(),changeColor">Order Now</a>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+        <div class="container payment-container  ">
+          <div class="payment-method">
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-discover"></i>
+          </div>
         </div>
       </div>
-  	</div>
-
-
+      <div class="payment" id="Div2">
+        <div class="card-details">
+    			<div class="card-details-container">
+    				<div class="type">
+    					<div class="payment-details">
+    						<label class="payment-title">Payment Details</label>
+    					</div>
+    					<div class="img">
+    						<img src="/img/payment.png" width="210" height="40" alt="payment type">
+    					</div>
+    				</div>
+            <form id="paymentDetails">
+      				<div class="row1">
+      					<div class="label1">
+      						<label>CARD NUMBER *</label>
+      					</div>
+      					<div class="box1">
+      						<input type="text" id="number" name="CARD NUMBER" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19"></input>
+      					</div>
+      				</div>
+      				<div class="row2">
+      					<div class="column1">
+      						<label class="exp">EXPIRATION DATE *</label>
+      						<input type="text" id="date" name="EXPIRATION DATE" placeholder="MM-YY" maxlength="5"></input>
+      					</div>
+      					<div class="column2">
+      						<label class="cv">CV CODE *</label>
+      						<input type="text" name="CV CODE" placeholder="CVC" maxlength="3"></input>
+      					</div>
+      				</div>
+      				<div class="row3">
+      					<div class="label3">
+      						<label>COUPON CODE</label>
+      					</div>
+      					<div class="box3">
+      						<input type="text" id="firstname" name="COUPON CODE" placeholder=""></input>
+      					</div>
+      					<button class="btn btn-primary" type="submit" onclick="ShowStep0();changeColor2();">Start Subscription</button>
+              </div>
+              <div class="asterix">
+                <p>* Required field</p>
+              </div>
+            </form>
+    				</div>
+    			</div>
+    		</div>
+      </div>
+      <div class="thanks" id="Div3">
+        <div>
+          <p> Thank you for buying this plan </p>
+        </div>
+        <div>
+          <p> Your code is : 9D2P-7EG2</p>
+        </div>
+      </div>
+      <div class="between-steps" id="Div0">
+        <div class="chargement" >
+        </div>
+        <div>
+          <p>Your payment is being proccessed</p>
+        </div>
+      </div>
+    </div>
   </section>
 
     <!-- Download Modal -->
@@ -238,10 +304,12 @@
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
+  <script src="/js/plugins.js"></script>
   <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script src="/js/loading.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/pricing/pricing.js" charset="utf-8"></script>
   <script>
     MicroModal.init();
   </script>
