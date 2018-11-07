@@ -211,7 +211,7 @@
       					<div class="box3">
       						<input type="text" id="firstname" name="COUPON CODE" placeholder=""></input>
       					</div>
-      					<button class="btn btn-primary" type="submit" onclick="ShowStep3();changeColor2()">Start Subscription</button>
+      					<button class="btn btn-primary" type="submit" onclick="ShowStep0();changeColor2();">Start Subscription</button>
               </div>
               <div class="asterix">
                 <p>* Required field</p>
@@ -229,10 +229,14 @@
           <p> Your code is : 9D2P-7EG2</p>
         </div>
       </div>
-
+      <div class="between-steps" id="Div0">
+        <div class="chargement" >
+        </div>
+        <div>
+          <p>Your payment is being proccessed</p>
+        </div>
+      </div>
     </div>
-
-
   </section>
 
     <!-- Download Modal -->
@@ -304,6 +308,7 @@
   <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script src="/js/loading.js"></script>
   <script src="/js/main.js"></script>
+  <script src="/js/navigation.js"></script>
   <script src="/pricing/pricing.js" charset="utf-8"></script>
   <script>
     MicroModal.init();

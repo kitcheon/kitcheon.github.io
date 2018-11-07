@@ -231,6 +231,36 @@ p1{
 	font-size:60px;
 }
 
-#Div2,#Div3{
+#Div0,#Div2,#Div3{
 	display: none;
+}
+
+.chargement {
+    border-top: 10px dotted #17252A;
+		border-bottom: 10px dotted #2B7A78;
+		border-right: 10px dotted #3AAFA9;
+		border-left: 10px dotted #DEF2F1;
+
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+		align-items: center;
+		text-align: center;
+		margin: 0 auto;
+		opacity: 0.7;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.between-steps{
+	align-items: center;
+	text-align: center;
+	font-size: 40px;
+	color: #def2f1;
+	margin:0 auto;
+	margin-top: 100px;
 }
