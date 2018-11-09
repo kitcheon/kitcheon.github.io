@@ -29,6 +29,11 @@
   box-sizing: border-box;
 }
 
+.wide-modal {
+  max-width: 80% !important;
+  max-height: 80vh !important;
+}
+
 .modal__header {
   display: flex;
   justify-content: space-between;
