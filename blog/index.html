@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="/css/homepage.css">
   <link rel="stylesheet" href="/blog/blog-css/navigation.css">
   <link rel="stylesheet" href="/blog/blog-css/blog.css">
+  <link rel="stylesheet" href="/blog/blog-css/switch.css">
   <link rel="stylesheet" href="/css/loading.css">
 </head>
 
@@ -116,8 +117,10 @@
   </nav>
 
   <section class="banner-section">
-    <img clas="Banner-Background" src="/blog/Food-Images/Banner-Background.jpg" style="height:150px">
+    <img clas="Banner-Background" src="/blog/Food-Images/Banner-Background.jpg" style="height:100px">
   </section>
+
+
 
 
 
@@ -138,7 +141,7 @@
       <div class="slide-image">
         <img src="/blog/Food-Images/Fresh-Raspberries-Blackberries-Fruits-at-the-Market-4K-Wallpaper.jpg" style="width:100%">
       </div>
-      <div class="text" >Caption Two</div>
+      <div class="text">Caption Two</div>
     </div>
 
     <div class="mySlides fade">
@@ -216,6 +219,16 @@
 </div> -->
 
 
+
+  <label class="switch" >
+    <input type="checkbox">
+    <span class="slider round">
+      <p id="dev-divide">Dev</p>
+      <p id="blog-divide"> Blog</p>
+    </span>
+
+  </label>
+
   <div class="posts">
     <div class="grid-sizer"></div>
     <div class="blogPost">
@@ -292,6 +305,9 @@
 
 
   <!-- Javascript files -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -307,27 +323,28 @@
   <script src="/js/navigation.js"></script>
 
   <script>
-    window.onload = function () { 
+    window.onload = function () {
       $('.posts').masonry({
-      // options
-      itemSelector: '.blogPost',
-      columnWidth: '.grid-sizer',
-      percentPosition: true,
-      gutter: 15,
-    });
-      
-     }
-
-    function bobbuilder(){
-      $('.posts').masonry({
-      // options
-      itemSelector: '.blogPost',
-      columnWidth: '.grid-sizer',
-      percentPosition: true,
-      gutter: 15,
-    });
+        // options
+        itemSelector: '.blogPost',
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+        gutter: 15,
+      });
     }
-   
+
+    function bobbuilder() {
+      $('.posts').masonry({
+        // options
+        itemSelector: '.blogPost',
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+        gutter: 15,
+      });
+
+      
+    }
+
   </script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74520113-4"></script>
@@ -342,6 +359,25 @@
     gtag('config', 'UA-74520113-4');
 
   </script>
+
+<script>
+    $(".switch").click(function(){
+      var done = $(".posts").is(":visible");
+      alert(done);
+
+      if(!done){
+        $(".posts").show();
+      }
+
+      if($(".posts").is(":visible") ){
+        done = $(".posts").is(":visible");
+        $(".posts").hide();
+      }
+
+      
+    });
+</script>
+
 </body>
 
 </html>
