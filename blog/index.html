@@ -89,7 +89,7 @@
       <div class="slide-image">
         <img src="/blog/Food-Images/POkqrNm.jpg" style="width:100%">
       </div>
-      <div class="text">Caption Text</div>
+      <div class="text">Homey Recipes (Just like Ma used to make)</div>
     </div>
 
     <div class="mySlides fade">
@@ -97,7 +97,7 @@
       <div class="slide-image">
         <img src="/blog/Food-Images/Fresh-Raspberries-Blackberries-Fruits-at-the-Market-4K-Wallpaper.jpg" style="width:100%">
       </div>
-      <div class="text">Caption Two</div>
+      <div class="text">A Survivor's Guide to the Farmer's Market </div>
     </div>
 
     <div class="mySlides fade">
@@ -105,7 +105,7 @@
       <div class="slide-image">
         <img src="/blog/Food-Images/Exotic-Cocktail-4K-Wallpaper.jpg" style="width:100%">
       </div>
-      <div class="text">Caption Three</div>
+      <div class="text">Cocktail Recipes are Here!</div>
     </div>
 
     <!-- Next and previous buttons -->
@@ -184,13 +184,13 @@
     </span>
   </label>
 
-  <div class="posts">
+  <div class="posts food-blog">
     <div class="grid-sizer"></div>
     <div class="blogPost">
       <div class="post-image-container">
         <img class="post-picture" src="/blog/Food-Images/Portrait.jpg">
         <p class="post-button" id="button-post">Read More</p>
-        <p> Hello There</p>
+        <p>New Burger Recipes are Here! <br> #Burgers <br> #Amazing_Recipes </p>
       </div>
     </div>
     <div class="blogPost">
@@ -198,14 +198,14 @@
         <img class="post-picture" src="/blog/Food-Images/Fresh-Raspberries-Blackberries-Fruits-at-the-Market-4K-Wallpaper.jpg">
         <p class="post-button" id="button-post">Read More</p>
       </div>
-      <p> Hello There</p>
+      <p>A Survivor's Guide to the Farmer's Market <br>#Adulting <br>#Fresh_Food <br>#Delicious</p>
     </div>
     <div class="blogPost">
       <div class="post-image-container">
         <img class="post-picture" src="/blog/Food-Images/Exotic-Cocktail-4K-Wallpaper.jpg">
         <p class="post-button" id="button-post">Read More</p>
       </div>
-      <p> Hello There</p>
+      <p>Cocktail Recipes are Here! <br>#TreatYoSelf <br>#TasteOfHeaven</p>
     </div>
     <div class="blogPost">
       <div class="post-image-container">
@@ -257,6 +257,26 @@
       <p> Hello There</p>
     </div>
   </div>
+
+  <div class="posts dev-blog">
+    <div class="grid-sizer"></div>
+    <div class="blogPost">
+      <div class="post-image-container">
+        <img class="post-picture" src="/blog/Dev-Images/IMG_1188.JPG">
+        <p class="post-button" id="button-post">Read More</p>
+        <p>Another Day, Another Brainstorming Session Done Right <br>#HardAtWork<br>#GreatThingsComing</p>
+      </div>
+    </div>
+
+    <div class="blogPost">
+      <div class="post-image-container">
+        <img class="post-picture" src="/blog/Food-Images/4k-portrait-of-a-bored-businessman-during-board-room-meeting-slow-motion_esgbjkgfrl__F0000.png">
+        <p class="post-button" id="button-post">Read More</p>
+      </div>
+      <p>We got a deal with Loblaws! IngredientNinja is Happening! <br>#IngredientNinja<br>#Loblaws<br>#TAYBA</p>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container-fluid v-center">
@@ -292,6 +312,7 @@
       <p>Copyright © Kitchon Inc. 2018</p>
     </div>
   </footer>
+
   <!-- Download Modal -->
   <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
@@ -758,17 +779,45 @@
   <script src="/js/main.js"></script>
   <script src="/js/navigation.js"></script>
 
+
   <script>
-    window.onload = function () {
-      $('.posts').masonry({
+    $(".slider").click(function () {
+      $(".food-blog").toggleClass('hidden');
+      $(".dev-blog").toggleClass('hidden');
+      $('.dev-blog').masonry({
         // options
+
         itemSelector: '.blogPost',
         columnWidth: '.grid-sizer',
         percentPosition: true,
         gutter: 15,
+
+      });
+    });
+
+  </script>
+  <script>
+    window.onload = function () {
+      MicroModal.init()
+      $('.posts').masonry({
+        // options
+        
+        itemSelector: '.blogPost',
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+        gutter: 15,
+        
+      });
+      $('.dev-blog').masonry({
+        // options
+        
+        itemSelector: '.blogPost',
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+        gutter: 15,
+        
       });
     }
-
     function bobbuilder() {
       $('.posts').masonry({
         // options
@@ -777,8 +826,16 @@
         percentPosition: true,
         gutter: 15,
       });
+      $('.dev-blog').masonry({
+        // options
+        itemSelector: '.blogPost',
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+        gutter: 15,
+      });
+      
     }
-    MicroModal.init();
+    $(".dev-blog").toggleClass('hidden');
 
   </script>
 
@@ -795,12 +852,7 @@
 
   </script>
 
-  <script>
-    $(".slider").click(function () {
-      $(".posts").toggleClass('hidden')
-    });
 
-  </script>
 
 </body>
 
