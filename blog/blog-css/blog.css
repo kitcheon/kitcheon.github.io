@@ -45,7 +45,10 @@ body{
 
 
 /* Code below taken and modified from W3Schools, https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
-.mySlides {display: none}
+.mySlides {
+  border-radius: 15px;
+  display: none
+  }
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -55,6 +58,7 @@ img {vertical-align: middle;}
   margin : auto;
   margin-left: 12.5%;
   margin-top: 2.5%;
+  border-radius: 15px;
 }
 
 /* Next & previous buttons */
@@ -185,7 +189,7 @@ img {vertical-align: middle;}
 .standardArticleLink{
   width: 98%;
   margin: 0 auto;
-  background-color: white;
+  background-color: rgb(231, 231, 231);
   border-style: solid;
   border-width : 0;
   border-bottom-width: 1px;
@@ -213,10 +217,11 @@ img {vertical-align: middle;}
   position: relative;
   margin-bottom: 15px;
   border-radius: 15px;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(238, 238, 238);
   transition: .5s ease;
   margin-bottom: 15px;
   backface-visibility: hidden;
+  padding: 10px;
 }
 
 .blogPost:hover {
