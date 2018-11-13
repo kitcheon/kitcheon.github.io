@@ -233,13 +233,17 @@ img {vertical-align: middle;}
 .blogPost:hover .post-button{
   opacity: 0.8;
 }
-
+.blogPost:hover .post-picture{
+  opacity: 0.8;
+}
 .post-picture{
   position:relative;
   border-radius: 8px;
   display:flex;
   max-width: 100%;
   margin : auto;
+  transition: 0.5 ease;
+  transition-duration: 1s;
 }
 
 .post-button{
@@ -251,7 +255,7 @@ img {vertical-align: middle;}
   opacity: 0;
   transition: 1 ease-in;
   top: 40%;
-  left: 35%;
+  left: 38%;
   border-radius: 2px;
   transition: 0.5 ease;
   transition-duration: 1s;
