@@ -16,4 +16,6 @@
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Github.io, jQuery, Modernizr, Normalize.css, 
+    Github.io, jQuery, Modernizr, Normalize.css, Vivius.js,
+    pathformer.js, jQuery waypoints, Wow.js, flickity.js, Masonry.js
+    Micromodal.js, animations.css, flexboxgrid.css
